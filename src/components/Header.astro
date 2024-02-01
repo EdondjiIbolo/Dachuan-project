@@ -3,74 +3,75 @@ import LoginIcon from '../components/icons/icono.astro'
 import ArrowIcon from './icons/ArrowIcon.astro'
 ---
 
-<header class='w-full max-w-[1300px] m-auto flex justify-between items-center  bg-white h-20 px-6 fixed top-0 left-0  z-50'>
-    <section class='flex items-center flex-grow-1 '>
-        <picture class='w-36 h-auto cursor-pointer '>
-            <img class='object-cover' src="img/logo.png" alt="Dachuan Logo">
-        </picture>
-        <nav >
-            <ul class='flex flex-row gap-2 p-2 text-xs   '>
-                <li >
-					<a class='p-2
-					 font-semibold flex items-center ' href="#">
-					Capability 
-					<div class='text-black'>
-						<div class="rotate-180">
-							<ArrowIcon />
+<header class='w-full max-width-[1200px]   bg-white h-20 relative flex items-center'>
+	<section class="flex w-full h-20 justify-between items-center px-6 fixed top-0 left-0  z-50">
+		<section class='flex items-center flex-grow-1 '>
+			<picture class='w-36 h-auto cursor-pointer '>
+				<img class='object-cover' src="img/logo.png" alt="Dachuan Logo">
+			</picture>
+			<nav >
+				<ul class='flex flex-row gap-2 p-2 text-xs   '>
+					<li >
+						<a class='p-2
+						font-semibold flex items-center ' href="#">
+						Capability 
+						<div class='text-black'>
+							<div class="rotate-180">
+								<ArrowIcon />
+							</div>
 						</div>
-					</div>
-					</a>
-				</li>
-               
-                <li >
-					<a class='p-2 flex items-center' href="#">
-					Resources 
-					<div class='text-black'>
-						<div class="rotate-180">
-							<ArrowIcon />
+						</a>
+					</li>
+				
+					<li >
+						<a class='p-2 flex items-center' href="#">
+						Resources 
+						<div class='text-black'>
+							<div class="rotate-180">
+								<ArrowIcon />
+							</div>
 						</div>
-					</div>
-					</a>
-				</li>
-                <li >
-					<a class='p-2 flex items-center' href="#">
-					Customer Stories 
-					<div class='text-black'>
-						<div class="rotate-180">
-							<ArrowIcon />
+						</a>
+					</li>
+					<li >
+						<a class='p-2 flex items-center' href="#">
+						Customer Stories 
+						<div class='text-black'>
+							<div class="rotate-180">
+								<ArrowIcon />
+							</div>
 						</div>
-					</div>
-					</a>
-				</li>
-				 <li >
-					<a class='p-2 flex items-center' href="#">
-					Contact Us 
-					<div class='text-black'>
-						<div class="rotate-180">
-							<ArrowIcon />
+						</a>
+					</li>
+					<li >
+						<a class='p-2 flex items-center' href="#">
+						Contact Us 
+						<div class='text-black'>
+							<div class="rotate-180">
+								<ArrowIcon />
+							</div>
 						</div>
-					</div>
-					</a>
-				</li>
+						</a>
+					</li>
 
-            </ul>
-        </nav>
+				</ul>
+			</nav>
+		</section>
+		<section class='flex gap-12'>
+		
+				<div class='flex items-center gap-1'>
+					<span class='cursor-pointer'>EN</span> | 
+					<span class='cursor-pointer'>CN</span>
+				</div>
+			
+			<div class='flex gap-2 items-center'>
+				<span>Log in</span>
+				<a href="#">
+					<LoginIcon />
+				</a>
+			
+			</div>
+			<a href="#" class='p-3 bg-blue-700 text-white font-bold rounded'>Guet a quote</a>
+		</section>
     </section>
-    <section class='flex gap-12'>
-       
-            <div class='flex items-center gap-1'>
-                <span class='cursor-pointer'>EN</span> | 
-                <span class='cursor-pointer'>CN</span>
-            </div>
-        
-        <div class='flex gap-2 items-center'>
-            <span>Log in</span>
-            <a href="#">
-                <LoginIcon />
-            </a>
-        
-        </div>
-        <a href="#" class='p-3 bg-blue-700 text-white font-bold rounded'>Guet a quote</a>
-    </section>
-    
 </header>
