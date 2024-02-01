@@ -1,0 +1,170 @@
+---
+
+import ArrowIcon from '../components/icons/ArrowIcon.astro';
+import LockIcon from '../components/icons/LockIcon.astro';
+import CheckIcon from '../components/icons/CheckIcon.astro';
+import Services from '../components/Servives.astro'
+import Layout from '../layouts/Layout.astro';
+
+---
+
+
+<Layout title="Dachuan Automation Manufacture">
+<main class= ' w-full max-w-[1300px] m-auto pb-32 pt-20 relative' >
+<section class='relative h-full overflow-hidden '>
+	<picture class='absolute -z-10 top-0 left-0 h-full max-w-max '>
+		<img src="/img/banner-en-3.webp" alt="Banner img" class="object-cover" >
+	</picture>
+	<section class='px-12 py-12 flex flex-col gap-4'>
+		<span class='text-zinc-500 text-xl'>提供一站式服务</span>
+		<h1 class='font-bold text-4xl'>零件快速打样和批量生产</h1>
+		<ul>
+			<li class='text-zinc-500 text-xl flex gap-2 items-center'>
+				<CheckIcon />
+				<strong class='text-blue-700'>50000+ </strong> 客户的信赖之选
+			</li>
+			<li class='text-zinc-500 text-2xl flex gap-2 items-center'>
+				<CheckIcon/>
+				<strong class='text-blue-700'>100% </strong>  全检出货，质量无
+			</li>
+
+			<li class='text-zinc-500 text-2xl flex gap-2 items-center'>
+				<CheckIcon/>
+				<strong class='text-blue-700'>97% </strong>  的准时交付率，最快一天交付
+			</li>
+		</ul>
+		<p class="text-zinc-500 text-lg flex flex-row items-center gap-1" >
+			<LockIcon/>
+			有上传的图纸均被严格保密，查看保密协议
+
+		</p>
+		<a href="#" class='p-4 bg-blue-700 w-32 rounded text-white font-bold'>立即获取报价</a>
+	</section>
+</section>
+<ul class="flex  w-full justify-between px-12 py-2 text-zinc-600 bg-zinc-50">
+		<li>
+			<a href="#">技术</a>
+		</li>
+		<li>
+			<a href="#">优势</a>
+		</li>
+		<li>
+			<a href="#">材料</a>
+		</li>
+		<li>
+			<a href="#">图库</a>
+		</li>
+		<li>
+			<a href="#">概述</a>
+		</li>
+		<li>
+			<a href="#">资源</a>
+		</li>
+		<li>
+			<a href="#">获取报价</a>
+		</li>
+</ul>
+<Services />
+<section class="flex">
+	<article class='max-w-[50%] w-[50%] flex justify-center items-center p-12 flex-col'>
+		<h3 class="font-bold text-xl mb-2">如何订购？</h3>
+		<p class='text-blue-800'>只需 <strong class="font-bold text-lg">3</strong> 步轻松实现</p>
+		<div class="flex p-8">
+			<picture>
+				<img src="/img/upload-file.png" alt="upload-file">
+			</picture>
+			<picture>
+				<img src="/img/stings.png" alt="stings-file">
+			</picture>
+			<picture>
+				<img src="/img/order.png" alt="order-file">
+			</picture>
+		</div>
+		<a href="#" class="flex p-3 shadow-md rounded text-white bg-orange-500 w-36 ">
+			<div class="rotate-90">
+				<ArrowIcon />
+			</div>
+			<p class="w-full text-center font-bold">免费报价1</p>
+		</a>
+	</article >
+	<article class='max-w-[50%] w-[50%] flex bg-slate-200 justify-center items-center p-12 flex-col'>
+		<h3 class="font-bold text-xl mb-2">您在非标件设计采购中</h3>
+		<div class="flex p-8">
+			<picture>
+				<img src="/img/upload-file.png" alt="upload-file">
+			</picture>
+			<picture>
+				<img src="/img/stings.png" alt="stings-file">
+			</picture>
+			<picture>
+				<img src="/img/order.png" alt="order-file">
+			</picture>
+			<picture>
+				<img src="/img/order.png" alt="order-file">
+			</picture>
+		</div>
+		<div class="flex items-center">
+
+			<picture class='h-24 flex  items-center justify-center overflow-hidden'>
+				<img src="/img/logo.png" class="h-24 oblockbject-cover"  alt="order-file">
+			</picture>
+			<p class="text-lg p-0 m-0 text-blue-700 font-bold">一键解决</p>
+		</div>
+	</article >		
+</section>
+<section class="flex flex-col gap-8 p-16">
+		<h3 class="w-full text-center">Chuantai 择幂科技为您的定制零件生产提供强力支持</h3>
+		<div class="flex gap-6">
+			<article class="flex  text-center gap-4 flex-col">
+				<picture class="flex justify-center">
+					<img class="w-36 h-36 block" src="/img/masive.svg" alt="Capabilitie">
+				</picture>
+				<h4>庞大的制造网络</h4>
+				<p class="max-w-[80ch] text-center">Xometry择幂科技拥有超过 10,000 家制造伙伴遍布在中国和全球30多个国家，具备不同的制造能力和认证。在线即可下达订单。我们的制造网络严格遵守保密协议，保护客户隐私。</p>
+			</article>
+			<article class="flex   text-center gap-4 flex-col">
+				<picture class="flex justify-center">
+					<img class="w-36 h-36 block" src="/img/masive.svg" alt="Capabilitie">
+				</picture>
+				<h4>庞大的制造网络</h4>
+				<p class="max-w-[80ch] text-center">无须漫长等待，只需轻点几下按键，即可获取 DFM（可制造性设计分析）反馈，了解备货时间和报价等信息。Xometry择幂科技实时报价引擎（IQE）利用数据科学为您服务，助您轻松为项目选择合适的价格/备货时间选项。兼容 STEP、Mesh、Parasolid 和 ACIS 文件。</p>
+			</article>
+			<article class="flex   text-center gap-4 flex-col">
+				<picture class="flex justify-center">
+					<img class="w-36 h-36 block" src="/img/masive.svg" alt="Capabilitie">
+				</picture>
+				<h4>庞大的制造网络</h4>
+				<p class="max-w-[80ch] text-center">凭借严格的质量保证和定期状态更新， 可确保您定购的部件将准确无误地准时送达。</p>
+			</article>
+
+		</div>
+</section>
+<section class="flex flex-col justufy-center bg-slate-50 p-8 items-center gap-8">
+	<h4 class="font-bold text-2xl">点击以下视频 快速了解 Chuantai</h4>
+	<article class=" flex flex-col gap-8 items-center">
+		<section class="flex gap-20 flex-wrap">
+			<video class='w-96 max-w-screen flex  h-48 border rounded' poster="/img/logo.png" controls="controls"   >
+				<source src="/video/misumi-video.mp4" type="video/mp4"/>
+			</video>
+			<video class='w-96 max-w-screen h-48 border k rounded' poster="/img/logo.png" controls="controls"   >
+				<source src="/video/misumi-video.mp4" type="video/mp4"/>
+			</video>
+		</section>
+		<div class="flex p-3 shadow-md rounded text-white bg-orange-500 w-48 ">
+			<div class="rotate-90">
+				<ArrowIcon />
+			</div>
+			<a href="#"class="w-full text-center font-bold">免费报价</a>
+		</div>
+	</article>
+</section>
+</main>
+
+</Layou/>
+
+
+
+
+
+
+
