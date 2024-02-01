@@ -3,14 +3,14 @@ import LoginIcon from '../components/icons/icono.astro'
 import ArrowIcon from './icons/ArrowIcon.astro'
 ---
 
-<header class='w-full max-width-[1200px]   bg-white h-20 relative flex items-center'>
-	<section class="flex w-full h-20 justify-between items-center px-6 fixed top-0 left-0  z-50">
-		<section class='flex items-center flex-grow-1 '>
-			<picture class='w-36 h-auto cursor-pointer '>
+<header class='w-full max-width-[1200px]   h-20 relative flex items-center'>
+	<section class="flex w-full h-20 justify-between items-center fixed top-0 left-0 z-30 bg-white px-6  ">
+		<section class='flex items-center  flex-0 '>
+			<picture class='w-44 h-auto cursor-pointer '>
 				<img class='object-cover' src="img/logo.png" alt="Dachuan Logo">
 			</picture>
-			<nav >
-				<ul class='flex flex-row gap-2 p-2 text-xs   '>
+			<nav class="nav">
+				<ul class='menu '>
 					<li >
 						<a class='p-2
 						font-semibold flex items-center ' href="#">
@@ -56,8 +56,15 @@ import ArrowIcon from './icons/ArrowIcon.astro'
 
 				</ul>
 			</nav>
+			<picture class='w-12 h-12'>
+				<img
+				src='/img/menu.svg'
+				alt="toggle img"
+				class="toggle sm:hidden"
+				/>
+        	</picture>
 		</section>
-		<section class='flex gap-12'>
+		<section class='flex gap-12 flex-0'>
 		
 				<div class='flex items-center gap-1'>
 					<span class='cursor-pointer'>EN</span> | 
@@ -73,5 +80,77 @@ import ArrowIcon from './icons/ArrowIcon.astro'
 			</div>
 			<a href="#" class='p-3 bg-blue-700 text-white font-bold rounded'>Guet a quote</a>
 		</section>
+		
     </section>
 </header>
+<style>
+
+.header__section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.toggle-menu {
+  display: none;
+}
+.menu {
+  display: flex;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.menu__link {
+  padding: 5px;
+  text-decoration: none;
+  color: var(--cl-blue-grey);
+  position: relative;
+}
+
+@media screen and (min-width: 448px) {
+
+  .show {
+    display: block;
+  }
+}
+@media screen and (max-width: 448px) {
+  .header {
+    position: sticky;
+    inset: 0;
+    z-index: 10;
+  }
+
+  .toggle-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0em;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 0%, 0.75);
+  }
+  .menu {
+    flex-direction: column;
+    padding: 100px 20px;
+    gap: 5px;
+    background-color: var(--cl-white);
+    width: 70%;
+    height: 100%;
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+</style>
