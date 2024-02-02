@@ -3,154 +3,187 @@ import LoginIcon from '../components/icons/icono.astro'
 import ArrowIcon from './icons/ArrowIcon.astro'
 ---
 
-<header class='w-full max-width-[1200px]   h-20 relative flex items-center'>
-	<section class="flex w-full h-20 justify-between items-center fixed top-0 left-0 z-30 bg-white px-6  ">
-		<section class='flex items-center  flex-0 '>
-			<picture class='w-44 h-auto cursor-pointer '>
-				<img class='object-cover' src="img/logo.png" alt="Dachuan Logo">
-			</picture>
-			<nav class="nav">
-				<ul class='menu '>
-					<li >
-						<a class='p-2
-						font-semibold flex items-center ' href="#">
-						Capability 
-						<div class='text-black'>
-							<div class="rotate-180">
-								<ArrowIcon />
-							</div>
-						</div>
-						</a>
-					</li>
-				
-					<li >
-						<a class='p-2 flex items-center' href="#">
-						Resources 
-						<div class='text-black'>
-							<div class="rotate-180">
-								<ArrowIcon />
-							</div>
-						</div>
-						</a>
-					</li>
-					<li >
-						<a class='p-2 flex items-center' href="#">
-						Customer Stories 
-						<div class='text-black'>
-							<div class="rotate-180">
-								<ArrowIcon />
-							</div>
-						</div>
-						</a>
-					</li>
-					<li >
-						<a class='p-2 flex items-center' href="#">
-						Contact Us 
-						<div class='text-black'>
-							<div class="rotate-180">
-								<ArrowIcon />
-							</div>
-						</div>
-						</a>
-					</li>
+<header class='w-full max-w-[1300px] m-auto h-20 bg-white shadow-md flex relative z-50 md:pr-2'>
+	<section class="flex w-full items-center justify-between border-b-1 h-20 bg-white z-30 shadow-md fixed  top-0 left-0">
 
-				</ul>
-			</nav>
-			<picture class='w-12 h-12'>
-				<img
-				src='/img/menu.svg'
-				alt="toggle img"
-				class="toggle sm:hidden"
-				/>
-        	</picture>
+		<section class="header__container--right">
+			<picture  class="w-44 h-full flex items-center overflow-hidden">
+				<img src="/img/logo.png" alt="Logo" class="w-full object-cover object-top">
+			</picture>
 		</section>
-		<section class='flex gap-12 flex-0'>
-		
-				<div class='flex items-center gap-1'>
-					<span class='cursor-pointer'>EN</span> | 
-					<span class='cursor-pointer'>CN</span>
-				</div>
-			
-			<div class='flex gap-2 items-center'>
-				<span>Log in</span>
-				<a href="#">
-					<LoginIcon />
-				</a>
-			
+		<section class="main-nav sm:flex-1 " id="menu">
+		<ul class="menu md:flex-1 " >
+			<li class="menu__item"><a href="" class="menu__link active">Collections</a></li>
+			<li class="menu__item ">
+				<a href="" class="menu__link ">Capability</a>
+			</li>
+			<li class="menu__item ">
+				<a href="" class="menu__link ">Capability</a>
+			</li>
+			<li class="menu__item ">
+				<a href="" class="menu__link ">Capability</a>
+			</li>
+		</ul>
+		<section class="log flex flex-nowrap relative items-center justify-center gap-3 ">
+			<div class="flex flex-nowrap">
+				<span>EN</span>
+				|
+				<span>CH</span>
 			</div>
-			<a href="#" class='p-3 bg-blue-700 text-white font-bold rounded'>Guet a quote</a>
+			<div class="flex gap-3 flex-nowrap">
+				<p class="w-12">Log in</p>
+				<LoginIcon />
+			</div>
+			<a href="#" class="bg-blue-800 text-white p-2 text-nowrap rounded md:w-18 w-44 text-center"> Get a Quotation</a>
 		</section>
 		
-    </section>
+	</section>
+	<picture id="toggle" class="h-12 w-12 md:hidden mr-2 flex items-center  relative">
+			<img src="/img/menu.svg" alt="menu icon" class="w-12 h-12 fixed top-3 right-1 ">
+	</picture>
+</section>
 </header>
+<script>
+	const menuElement = document.getElementById('menu')
+	const toggleElement = document.getElementById('toggle')
+
+	toggleElement.addEventListener('click', ()=>{
+		console.log('hola')
+		menuElement.classList.toggle('show')
+	})
+</script>
 <style>
 
-.header__section {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.toggle-menu {
-  display: none;
-}
-.menu {
-  display: flex;
-  gap: 5px;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.menu__link {
-  padding: 5px;
-  text-decoration: none;
-  color: var(--cl-blue-grey);
-  position: relative;
-}
-
-@media screen and (min-width: 448px) {
-
-  .show {
-    display: block;
-  }
-}
-@media screen and (max-width: 448px) {
-  .header {
-    position: sticky;
-    inset: 0;
-    z-index: 10;
-  }
-
-  .toggle-menu {
+.header__container--right , .header__container--left{
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 10;
-  }
-  .fixed {
-    position: fixed;
-  }
-  .nav {
-    display: none;
-    position: fixed;
-    z-index: 8;
-    top: 0;
-    left: 0em;
-    width: 100vw;
-    height: 100vh;
-    background-color: hsl(0, 0%, 0%, 0.75);
-  }
-  .menu {
-    flex-direction: column;
-    padding: 100px 20px;
-    gap: 5px;
-    background-color: var(--cl-white);
-    width: 70%;
-    height: 100%;
-  }
-
-  .show {
+    justify-content: center;
+}
+.logo{
     display: block;
-  }
+    height: 30px;
+    width: 220px;
 }
 
+.menu__link{
+    width: 100%;
+    display:block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: 700;
+
+}
+@media screen and (max-width:768px){
+	.main-nav{
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: red;
+		display: block;
+		z-index: 110;
+		padding: 20px;
+		padding-top: 20px;
+		margin-top: 75px;
+		border-top: 1px solid grey;
+		transform: translatex(100%);
+		transition: transform 350ms ease-in;
+		background: #ffffff;
+	}
+	.show{
+	transform: translatex(0%);
+	}
+	header{
+		box-shadow: 1px 0px 1px rgb(0, 	0, 0);
+		background: red;
+	}
+	header > section{
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	.menu{
+		gap:10px;
+		display:flex;
+		flex-direction: column;
+	}
+	.menu__link{
+
+		padding: 10px;
+		border-bottom: 1px solid grey;
+
+	}
+	.log{
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.log > div{
+		display: flex;
+		gap: 10px;
+		padding: 5px;
+	}
+	.log > div > span{
+		padding: 5px;
+	}
+}
+@media screen and (min-width:768px){
+    
+    
+    .main-header{
+        
+        
+        max-width: 900px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        
+        background-color: var(--color-white);
+        border-bottom: 1px solid var(--color-light-gray-blue);
+   
+	}
+	 .toggle-menu{
+        display: none;
+    
+    }
+	  /* menu */
+    .main-nav{
+		width: 100%;
+        position: relative;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+		flex: 1;
+
+    }
+   
+    .menu{
+        position: relative;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0px;
+        margin: 0;
+    }
+    .menu__item{
+        padding: 5px;
+        position: relative;
+        
+    }
+    .menu__link{
+        width: 100%;
+        display:block;
+        padding: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        color: var(--color-gray-blue);
+        /* color: var(--color-gray-dark-blue); */
+        font-weight: normal;
+        
+    }
+}
 </style>
