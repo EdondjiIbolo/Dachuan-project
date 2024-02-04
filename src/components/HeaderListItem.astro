@@ -1,59 +1,33 @@
 ---
-import {sections} from '../headerData.json'
-import LoginIcon from '../components/icons/icono.astro'
-import ArrowIcon from './icons/ArrowIcon.astro'
-import HeaderListItem from './HeaderListItem.astro'
+import ListItemNav from './ListItemNav.astro';
+import ArrowIcon from './icons/ArrowIcon.astro';
+
+const {section } = Astro.props;
+const { section_list } = section
+
 ---
-
-<header class='w-full max-w-[1300px] m-auto h-20  shadow-md flex  relative  md:pr-2'>
-	<section class="flex w-full max-w-[1300px] bg-white items-center m-auto justify-between border-b-1 h-20 z-30 shadow-md fixed   ">
-
-		<section class="header__container--right">
-			<picture  class="w-44 h-full flex items-center overflow-hidden">
-				<img src="/img/logo.png" alt="Logo" class="w-full object-cover object-top">
-			</picture>
-		</section>
-		<section class="main-nav sm:flex-1 " id="menu">
-		<ul class="menu md:flex-1 " >
-			{
-				sections.map(section=>{
-					return(
-						<li class="menu__item">
-							<HeaderListItem section={section}/>
-						</li>
-					)
-				})
-			}
+	<li class="menu__item">
+		<div class="flex justify-center items-center">
+			<a href="#" class="menu__link ">{section?.section_title} </a>
+			<div class="flecha transition-all duration-150 ease-in">
+				<ArrowIcon />
+			</div>
+		</div>
+		<ul class="hidden py-2 sm:px-8 sub-menu w-screen  max-w-[1300px] md:justify-between md:items-center md:shadow-md bg-white md:absolute -left-44 top-[45px]  md:h-min">
+				{
+					section_list?.map(item=>{
+						return(
+							<li>	
+								<ListItemNav  item={item}/>
+							</li>
+						)
+					})
+				}
 		</ul>
-		<section class="log flex flex-nowrap relative items-center justify-center gap-3 ">
-			<div class="flex flex-nowrap">
-				<span>EN</span>
-				|
-				<span>CH</span>
-			</div>
-			<div class="flex gap-3 flex-nowrap">
-				<p class="w-12">Log in</p>
-				<LoginIcon />
-			</div>
-			<a href="#" class="bg-blue-800 text-white p-2 text-nowrap rounded md:w-18 w-44 text-center"> Get a Quotation</a>
-		</section>
-		
-	</section>
-	<picture id="toggle" class="h-12 w-12 md:hidden mr-2 flex items-center  relative">
-			<img src="/img/menu.svg" alt="menu icon" class="w-12 h-12 fixed top-3 right-1 ">
-	</picture>
-</section>
-</header>
-<script>
-	const menuElement = document.getElementById('menu')
-	const toggleElement = document.getElementById('toggle')
+	</li>
 
-	toggleElement.addEventListener('click', ()=>{
-		menuElement.classList.toggle('show')
-	})
-</script>
-<style>
-
+	<style>
+	
 .header__container--right , .header__container--left{
     display: flex;
     align-items: center;

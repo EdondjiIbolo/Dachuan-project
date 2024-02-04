@@ -1,6 +1,7 @@
 ---
 
 import ArrowIcon from '../components/icons/ArrowIcon.astro';
+import Arrow2 from '../components/icons/arrow2.astro';
 import LockIcon from '../components/icons/LockIcon.astro';
 import CheckIcon from '../components/icons/CheckIcon.astro';
 import Services from '../components/Servives.astro'
@@ -65,43 +66,109 @@ import Layout from '../layouts/Layout.astro';
 		</li>
 </ul>
 <Services />
-<section class="grid sm:grid-flow-col sm:auto-cols-fr">
-	<article class='  flex justify-center items-center p-12 flex-col'>
+<section class="flex flex-wrap">
+	<article class='w-full m-auto flex justify-center items-center p-12 flex-col'>
 		<h3 class="font-bold text-xl mb-2">如何订购？</h3>
 		<p class='text-blue-800'>只需 <strong class="font-bold text-lg">3</strong> 步轻松实现</p>
-		<div class="flex p-8">
-			<picture>
-				<img src="/img/upload-file.png" alt="upload-file">
-			</picture>
-			<picture>
-				<img src="/img/stings.png" alt="stings-file">
-			</picture>
-			<picture>
-				<img src="/img/order.png" alt="order-file">
-			</picture>
+		<div class=" flex md:gap-6  p-8">
+			<article class=" flex flex-col min-w-32 justify-center items-center shadow  shadow-black  rounded-sm text-center relative p-3 gap-3">
+				<span class="absolute -top-2 -left-2  text-white rounded-full h-[25px] w-[25px] flex justify-center items-center font-semibold text-xs">1</span>
+				<picture>
+					<img src="/img/upload.svg" class="w-16 h-16" alt="upload-file">
+				</picture>
+				<p class="font-semibold text-nowrap">上传3D图</p>
+			</article>
+			<div class="max-w-10 justify-center bg-red-500 flex items-center">
+				<Arrow2 />
+				<Arrow2 />
+				<Arrow2 />
+			</div>
+			<article class="min-w-32 flex flex-col justify-center items-center shadow  shadow-black  rounded-sm text-center relative p-3 gap-3">
+				<span class="absolute -top-2 -left-2 bg-green-900 text-white rounded-full h-[25px] w-[25px] flex justify-center items-center font-semibold text-xs">2</span>
+				<picture>
+					<img src="/img/ordenar.svg" class="w-16 h-16" alt="upload-file">
+				</picture>
+				<p class="font-semibold text-nowrap">上传3D图</p>
+			</article>
+			<div class=" justify-center flex items-center">
+				<Arrow2 />
+				<Arrow2 />
+				<Arrow2 />
+			</div>
+			<article class="min-w-32 flex flex-col justify-center items-center shadow  shadow-black  rounded-sm text-center relative p-3 gap-3">
+				<span class="absolute -top-2 -left-2 bg-green-900 text-white rounded-full h-[25px] w-[25px] flex justify-center items-center font-semibold text-xs">3</span>
+				<picture>
+					<img src="/img/upload.svg" class="w-16 h-16" alt="upload-file">
+				</picture>
+				<p class="font-semibold text-nowrap">上传3D图</p>
+			</article>
 		</div>
 		<a href="#" class="flex p-3 shadow-md rounded text-white bg-orange-500 w-36 ">
 			<div class="rotate-90">
 				<ArrowIcon />
 			</div>
-			<p class="w-full text-center font-bold">免费报价1</p>
+			<p class="w-full text-center font-bold">免费报价</p>
 		</a>
 	</article >
-	<article class='  flex bg-slate-200 justify-center items-center p-12 flex-col'>
+	<article class='w-full  m-auto flex bg-slate-200 justify-center items-center p-12 flex-col'>
 		<h3 class="font-bold text-xl mb-2">您在非标件设计采购中</h3>
-		<div class="flex p-8">
-			<picture>
-				<img src="/img/upload-file.png" alt="upload-file">
-			</picture>
-			<picture>
-				<img src="/img/stings.png" alt="stings-file">
-			</picture>
-			<picture>
-				<img src="/img/order.png" alt="order-file">
-			</picture>
-			<picture>
-				<img src="/img/order.png" alt="order-file">
-			</picture>
+		<div class="grid grid-cols-4 gap-4  py-8">
+			<div class=" h-auto flex flex-col   shadow-lg rounded  overflow-hidden bg-white gap-4 text-center">
+				<header class="bg-green-400 px-2 font-semibold w-full py-2 text-white text-base">
+					<p>出图耗时耗力</p>
+				</header>
+				<div class=" flex flex-col gap-4  justify-center items-center py-2">
+					<picture class="h-16 w-full flex justify-center items-center">
+						<img src="/img/upload2.svg" class="w-16 h-16" alt="upload-file">
+					</picture>
+					<div class="flex-col flex gap-0 font-xs font-semibold">
+						<p>无需工程图</p>
+						<p>上传3D图</p>
+					</div>
+				</div>
+			</div>
+			<div class=" h-auto flex flex-col  items-center  shadow-lg rounded overflow-hidden bg-white gap-4 text-center">
+				<header class="bg-green-400 px-4 w-full text-sm py-2 text-white ">
+					<p>出图耗时耗力</p>
+				</header>
+				<div class=" flex flex-col gap-2 px-6 py-2">
+					<picture <picture class="h-16 w-full flex justify-center items-center">
+						<img src="/img/seguro.svg" class="w-16 h-16" alt="stings-file">
+					</picture>
+					<div class="flex-col flex gap-0 font-xs font-semibold">
+						<p>无需工程图</p>
+						<p>上传3D图</p>
+					</div>
+				</div>
+			</div>
+			<div class=" h-auto flex flex-col  items-center  shadow-lg rounded overflow-hidden bg-white gap-4 text-center">
+				<header class="bg-green-400 px-4 w-full text-sm py-2 text-white ">
+					<p>出图耗时耗力</p>
+				</header>
+				<div class=" flex flex-col gap-2 px-6 py-2">
+					<picture <picture class="h-16 w-full flex justify-center items-center">
+						<img src="/img/settings.svg" class="w-16 h-16" alt="order-file">
+					</picture>
+					<div class="flex-col flex gap-0 font-xs font-semibold">
+						<p>无需工程图</p>
+						<p>上传3D图</p>
+					</div>
+				</div>
+			</div>
+			<div class=" h-auto flex flex-col  items-center  shadow-lg rounded overflow-hidden bg-white gap-4 text-center">
+				<header class="bg-green-400 px-4 w-full text-sm py-2 text-white ">
+					<p>出图耗时耗力</p>
+				</header>
+				<div class=" flex flex-col gap-2 px-6 py-2">
+					<picture class="h-16 w-16 flex justify-center items-center">
+						<img src="/img/envio.svg" class="w-16 h-16" alt="order-file">
+					</picture>
+					<div class="flex-col flex gap-0 font-xs font-semibold">
+						<p>无需工程图</p>
+						<p>上传3D图</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="flex items-center">
 
@@ -124,14 +191,15 @@ import Layout from '../layouts/Layout.astro';
 			</article>
 			<article class="flex   text-center gap-4 flex-col">
 				<picture class="flex justify-center">
-					<img class="w-36 h-36 block" src="/img/garantia.svg" alt="Capabilitie">
+					<img class="w-36 h-36 block" src="/img/check.svg" alt="Capabilitie">
 				</picture>
 				<h4>庞大的制造网络</h4>
 				<p class="max-w-[60ch] m-auto text-center">无须漫长等待，只需轻点几下按键，即可获取 DFM（可制造性设计分析）反馈，了解备货时间和报价等信息。Xometry择幂科技实时报价引擎（IQE）利用数据科学为您服务，助您轻松为项目选择合适的价格/备货时间选项。兼容 STEP、Mesh、Parasolid 和 ACIS 文件。</p>
 			</article>
 			<article class="flex   text-center gap-4 flex-col">
 				<picture class="flex justify-center">
-					<img class="w-36 h-36 block" src="/img/ordenador.svg" alt="Capabilitie">
+					<img class="w-36 h-36 block" src="/img/akiii
+					.svg" alt="Capabilitie">
 				</picture>
 				<h4>庞大的制造网络</h4>
 				<p class="max-w-[60ch] m-auto text-center">凭借严格的质量保证和定期状态更新， 可确保您定购的部件将准确无误地准时送达。</p>
@@ -160,8 +228,7 @@ import Layout from '../layouts/Layout.astro';
 </section>
 </main>
 
-</Layou/>
-
+</Layout/>
 
 
 
