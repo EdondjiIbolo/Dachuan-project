@@ -1,0 +1,133 @@
+---
+import ArrowIcon from './icons/ArrowIcon.astro'
+---
+
+<section class=" bg-slate-100">
+                <article class="section-art text-center flex flex-col gap-3">
+                    <p class="text__title ">
+                        Frequently Asked Questions
+                    </p>
+                    <p class="text__description">  
+                            Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
+                    </p>
+                </article>
+                <article class="section-qs">
+                    <ul class="qs-list">
+                        <li class="list__item">
+                            <header class=" list__header flex items-center justify-between">
+                               <p class="item__title">What is Bookmark</p>
+                                <div class="icono flecha rotate-180 transition-all duration-150 ease-in">
+                                    <ArrowIcon />
+                                </div>
+                            </header>
+
+                            <p class="qs-ans">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <header class=" list__header flex items-center justify-between">
+                               <p class="item__title">How can I request a new browser?</p>
+                                <div class="icono flecha rotate-180 transition-all duration-150 ease-in">
+                                    <ArrowIcon />
+                                </div>
+                            </header>
+
+                            <p class="qs-ans">
+                              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <header class=" list__header flex items-center justify-between">
+                               <p class="item__title">Is there a mobile app?</p>
+                                <div class="icono flecha rotate-180 transition-all duration-150 ease-in">
+                                    <ArrowIcon />
+                                </div>
+                            </header>
+
+                            <p class="qs-ans ">
+                                Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra urus. Sed sollicitudin ex et ultricies bibendum.
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <header class=" list__header flex items-center justify-between">
+                               <p class="item__title">What about other Chromium browsers?</p>
+                                <div class="icono flecha rotate-180 transition-all duration-150 ease-in">
+                                    <ArrowIcon />
+                                </div>
+                            </header>
+
+                            <p class="qs-ans">
+                                Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                                vitae neque eget nisl gravida pellentesque non ut velit.
+                            </p>
+                        </li>
+
+                    </ul>
+                </article>
+            </section>
+ <script>
+    const qsIcon = document.querySelectorAll('.list__header');
+    qsIcon.forEach(icon=>{
+    icon.addEventListener('click', (e)=>{
+        console.log('hola')
+        icon.nextElementSibling.classList.toggle('ans-show')
+        icon.children[1].classList.toggle('icon-rotate')
+     
+   })
+})
+</script>
+<style>
+    .section-sc{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.section-qs{
+    width: min(100%,700px);
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 30px;
+    padding-inline:7%;
+}
+.section-qs ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden
+}
+.list__item{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    transition: height ease-in 300ms;
+}
+.qs-ans{
+    height: 0px;
+    width: 100%;
+    margin: 0;
+    color: hsl(233, 26%, 7%);
+    overflow: hidden;
+   
+    transition: height ease-in 300ms;
+}
+.ans-show{
+    height: min-content
+}
+.icon-rotate{
+    transform: rotate(0deg)
+}
+.item__title{
+    margin: 0;
+    padding-block: 10px;
+}
+</style>
