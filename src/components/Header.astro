@@ -3,8 +3,8 @@ import LoginIcon from '../components/icons/icono.astro'
 import ArrowIcon from './icons/ArrowIcon.astro'
 ---
 
-<header class='w-full max-w-[1300px] m-auto h-20 bg-white shadow-md flex relative z-50 md:pr-2'>
-	<section class="flex w-full items-center justify-between border-b-1 h-20 bg-white z-30 shadow-md fixed  top-0 left-0">
+<header class='w-full max-w-[1300px] m-auto h-20  shadow-md flex  relative  md:pr-2'>
+	<section class="flex w-full max-w-[1300px] bg-white items-center m-auto justify-between border-b-1 h-20 z-30 shadow-md fixed   ">
 
 		<section class="header__container--right">
 			<picture  class="w-44 h-full flex items-center overflow-hidden">
@@ -15,7 +15,12 @@ import ArrowIcon from './icons/ArrowIcon.astro'
 		<ul class="menu md:flex-1 " >
 			<li class="menu__item"><a href="" class="menu__link active">Collections</a></li>
 			<li class="menu__item ">
-				<a href="" class="menu__link ">Capability</a>
+				<a href="#" class="menu__link ">Capability</a>
+				<ul class="hidden sm:px-8 sub-menu w-screen  max-w-[1300px] md:justify-between md:items-center bg-red-400 md:absolute -left-44 top-[60px]  md:h-20">
+					<li><a href="#">Turng</a></li>
+					<li><a href="#">Milling</a></li>
+					<li><a href="#">Drilling</a></li>
+				</ul>
 			</li>
 			<li class="menu__item ">
 				<a href="" class="menu__link ">Capability</a>
@@ -72,6 +77,9 @@ import ArrowIcon from './icons/ArrowIcon.astro'
     color: #000;
     font-weight: 700;
 
+}
+.menu__item:hover .sub-menu{
+	display: flex;
 }
 @media screen and (max-width:768px){
 	.main-nav{
@@ -131,19 +139,7 @@ import ArrowIcon from './icons/ArrowIcon.astro'
 @media screen and (min-width:768px){
     
     
-    .main-header{
-        
-        
-        max-width: 900px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        
-        background-color: var(--color-white);
-        border-bottom: 1px solid var(--color-light-gray-blue);
-   
-	}
+
 	 .toggle-menu{
         display: none;
     
@@ -170,7 +166,7 @@ import ArrowIcon from './icons/ArrowIcon.astro'
     }
     .menu__item{
         padding: 5px;
-        position: relative;
+ 
         
     }
     .menu__link{
