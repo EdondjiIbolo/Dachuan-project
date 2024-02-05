@@ -68,38 +68,38 @@ import Layout from '../layouts/Layout.astro';
 </ul>
 <Services />
 <section class="flex flex-wrap">
-	<article class='w-full m-auto flex justify-center items-center gap-8 p-12 flex-col'>
+	<article class='w-full m-auto flex justify-center items-center gap-8  p-4 bg-slate-100 flex-col'>
 		<h3 class="font-bold text-xl mb-2">如何订购？</h3>
 		<p class='text-blue-800'>只需 <strong class="font-bold text-lg">3</strong> 步轻松实现</p>
-		<div class=" flex md:gap-6 ">
-			<article class=" flex flex-col min-w-32 justify-center items-center shadow  shadow-black  rounded-sm text-center relative p-3 gap-3">
+		<div class="items-container">
+			<article class="item">
 				<span class="absolute -top-2 -left-2 bg-green-900 text-white rounded-full h-[25px] w-[25px] flex justify-center items-center font-semibold text-xs">1</span>
 				<picture>
-					<img src="/img/upload.svg" class="w-16 h-16" alt="upload-file">
+					<img src="/img/upload.svg" class="w-6 h-6" alt="upload-file">
 				</picture>
 				<p class="font-semibold text-nowrap">上传3D图</p>
 			</article>
-			<div class="max-w-10 justify-center flex items-center">
+			<div class="">
 				<Arrow2 />
 				<Arrow2 />
 				<Arrow2 />
 			</div>
-			<article class="min-w-32 flex flex-col justify-center items-center shadow  shadow-black  rounded-sm text-center relative p-3 gap-3">
+			<article class="item"  >
 				<span class="absolute -top-2 -left-2 bg-green-900 text-white rounded-full h-[25px] w-[25px] flex justify-center items-center font-semibold text-xs">2</span>
 				<picture>
-					<img src="/img/ordenar.svg" class="w-16 h-16" alt="upload-file">
+					<img src="/img/ordenar.svg" class="w-6 h-6" alt="upload-file">
 				</picture>
 				<p class="font-semibold text-nowrap">上传3D图</p>
 			</article>
-			<div class=" justify-center flex items-center">
+			<div class="">
 				<Arrow2 />
 				<Arrow2 />
 				<Arrow2 />
 			</div>
-			<article class="min-w-32 flex flex-col justify-center items-center shadow  shadow-black  rounded-sm text-center relative p-3 gap-3">
+			<article class="item">
 				<span class="absolute -top-2 -left-2 bg-green-900 text-white rounded-full h-[25px] w-[25px] flex justify-center items-center font-semibold text-xs">3</span>
 				<picture>
-					<img src="/img/upload.svg" class="w-16 h-16" alt="upload-file">
+					<img src="/img/upload.svg" class="w-6 h-6" alt="upload-file">
 				</picture>
 				<p class="font-semibold text-nowrap">上传3D图</p>
 			</article>
@@ -111,10 +111,10 @@ import Layout from '../layouts/Layout.astro';
 			<p class="w-full text-center font-bold">免费报价</p>
 		</a>
 	</article >
-	<article class='w-full  m-auto flex bg-slate-200 justify-center items-center p-12 flex-col'>
+	<article class='items-container2'>
 		<h3 class="font-bold text-xl mb-2">您在非标件设计采购中</h3>
 		<div class="grid grid-cols-4 gap-4  py-8">
-			<div class=" h-auto flex flex-col   shadow-lg rounded  overflow-hidden bg-white gap-4 text-center">
+			<div class="item2">
 				<header class="bg-green-400 px-2 font-semibold w-full py-2 text-white text-base">
 					<p>出图耗时耗力</p>
 				</header>
@@ -128,7 +128,7 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 			</div>
-			<div class=" h-auto flex flex-col  items-center  shadow-lg rounded overflow-hidden bg-white gap-4 text-center">
+			<div class="item2">
 				<header class="bg-green-400 px-4 w-full text-sm py-2 text-white ">
 					<p>出图耗时耗力</p>
 				</header>
@@ -142,7 +142,7 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 			</div>
-			<div class=" h-auto flex flex-col  items-center  shadow-lg rounded overflow-hidden bg-white gap-4 text-center">
+			<div class="item2">
 				<header class="bg-green-400 px-4 w-full text-sm py-2 text-white ">
 					<p>出图耗时耗力</p>
 				</header>
@@ -156,7 +156,7 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 			</div>
-			<div class=" h-auto flex flex-col  items-center  shadow-lg rounded overflow-hidden bg-white gap-4 text-center">
+			<div class="item2">
 				<header class="bg-green-400 px-4 w-full text-sm py-2 text-white ">
 					<p>出图耗时耗力</p>
 				</header>
@@ -233,6 +233,41 @@ import Layout from '../layouts/Layout.astro';
 </main>
 
 </Layout/>
+<style>
+.items-container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #00000036;
+}
+.items-container2{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background: #00000036;
+}
+.item{
+	width: min(200px ,30%);
+	background-color: #fff;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	aspect-ratio: 9/10;
+}
+.item2{
+	width: min(150px , 40%);
+	
+	height: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+</style>
 
 
 
