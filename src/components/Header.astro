@@ -5,16 +5,16 @@ import ArrowIcon from './icons/ArrowIcon.astro'
 import HeaderListItem from './HeaderListItem.astro'
 ---
 
-<header class='w-full max-w-[1300px] m-auto h-20  shadow-md flex  relative  md:pr-2'>
-	<section class="flex w-full max-w-[1300px] bg-white items-center m-auto justify-between border-b-1 h-20 z-30 shadow-md fixed   ">
+<header class='w-screen  justify-center h-20  bg-white  flex relative  md:pr-5'>
+	<section class="flex w-full max-w-[1320px]  items-center  border-b-2  bg-white  m-auto justify-between  h-20 z-30  fixed   ">
 
 		<section class="header__container--right">
-			<picture  class="w-44 h-full flex items-center overflow-hidden">
+			<picture  class="w-44 h-full bg-black flex items-center overflow-hidden">
 				<img src="/img/logo.png" alt="Logo" class="w-full object-cover object-top">
 			</picture>
 		</section>
 		<section class="main-nav sm:flex-1 " id="menu">
-		<ul class="menu md:flex-1 " >
+		<ul class="menu sm:flex-1 " >
 			{
 				sections.map(section=>{
 					return(
@@ -163,9 +163,6 @@ import HeaderListItem from './HeaderListItem.astro'
         list-style: none;
         padding: 0px;
         margin: 0;
-    }
-    .menu__item{
-        padding: 8px;        
     }
     .menu__link{
         width: 100%;
