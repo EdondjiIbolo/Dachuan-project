@@ -7,11 +7,13 @@ import LockIcon from '../components/icons/LockIcon.astro';
 import CheckIcon from '../components/icons/CheckIcon.astro';
 import Services from '../components/Servives.astro'
 import Layout from '../layouts/Layout.astro';
+import Material from '../components/Material.astro';
+import Assistance from '../components/Assistance.astro';
 
 ---
 
 
-<Layout title="Dachuan Automation Manufacture">
+<Layout title="Chuantai Automation Manufacture">
 <main class= ' w-full max-w-[1300px] m-auto  relative ' >
 <section class='relative  h-86 sm:h-80 '>
 	<picture class='absolute -z-10 top-0 left-0  w-full '>
@@ -189,8 +191,13 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</article >		
 	</section>
+	<section id="Materials" class="relative w-full">
+		<Material />
+	</section>
+	<Assistance />
 </section>
-	<section class="flex flex-col gap-8 p-16">
+
+<section class="flex flex-col gap-8 p-16">
 			<h3 class="w-full text-center">Chuantai 择幂科技为您的定制零件生产提供强力支持</h3>
 			<div class=" grid grid-cols-1 md:grid-cols-3 content-center gap-6  justify-center">
 				<article class="flex  text-center gap-4 flex-col">
@@ -198,7 +205,7 @@ import Layout from '../layouts/Layout.astro';
 						<img class="w-36 h-36 block" src="/img/masive.svg" alt="Capabilitie">
 					</picture>
 					<h4>Manufacturing Fusion</h4>
-					<p class="max-w-[60ch] m-auto text-center">Dachuan has over 10,000 manufacturing partners located in China and over 30 countries worldwide, with different manufacturing capabilities and certifications. Orders can be placed online. Our manufacturing network strictly adheres to confidentiality agreements to protect customer privacy.</p>
+					<p class="max-w-[60ch] m-auto text-center">Chuantai has over 10,000 manufacturing partners located in China and over 30 countries worldwide, with different manufacturing capabilities and certifications. Orders can be placed online. Our manufacturing network strictly adheres to confidentiality agreements to protect customer privacy.</p>
 				</article>
 				<article class="flex   text-center gap-4 flex-col">
 					<picture class="flex justify-center">
@@ -217,9 +224,9 @@ import Layout from '../layouts/Layout.astro';
 				</article>
 
 			</div>
-	</section>
-	<section id="Quotation" class="flex flex-col justufy-center bg-slate-50 p-8 items-center gap-8">
-		<h4 class="font-bold text-2xl">点击以下视频 快速了解 Chuantai</h4>
+</section>
+<section id="Quotation" class="flex flex-col justufy-center bg-slate-50 p-8 items-center gap-8">
+		<h4 class="font-bold text-2xl">Video tutorial to quickly understand Chuantai</h4>
 		<article class=" flex flex-col gap-8 items-center">
 			<section class="flex gap-20 flex-wrap">
 				<video class='w-96 max-w-screen flex-1  h-48 border rounded' poster="/img/logo.png" controls="controls"   >
@@ -236,7 +243,7 @@ import Layout from '../layouts/Layout.astro';
 				<a href="#"class="w-full text-center text-sm font-bold">Get a Quotation</a>
 			</div>
 		</article>
-	</section>
+</section>
 
 <section>
 	<Acordeon />
