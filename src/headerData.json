@@ -1,28 +1,28 @@
 {
   "sections": [
     {
-      "section_title": "CNC 机加工",
+      "section_title": "Services",
       "section_list": [
         {
-          "section_subtitle": "CNC 钻孔",
-          "section_intro": "Miling",
-          "section_description": "提供多种材质和表面处理 ,可指定尺寸公差及精度孔",
+          "section_subtitle": "CNC MACHINING",
+          "section_intro": " CNC MACHINING Milling",
+          "section_description": "High-quality CNC milling for your machining projects.",
           "section_img": "/img/miling1.svg",
-          "section_img_alt": "CNC 钻孔"
+          "section_img_alt": "CNC MACHINING MILLING"
         },
         {
-          "section_subtitle": "CNC 铣削",
-          "section_intro": "Drilling",
-          "section_description": "提供多种材质和表面处理 ,可指定尺寸公差及精度孔",
+          "section_subtitle": "CNC MACHINING",
+          "section_intro": " CNC MACHINING Turning",
+          "section_description": "We offer top-notch CNC turning services for your machining projects.",
           "section_img": "/img/drilling1.svg",
-          "section_img_alt": "CNC 铣削"
+          "section_img_alt": "CNC MACHINING Turning"
         },
         {
-          "section_subtitle": "CNC 车削",
-          "section_intro": "Turning",
-          "section_description": "提供多种材质和尺寸范围可对应激光、折弯等加工",
+          "section_subtitle": "CNC MACHINING",
+          "section_intro": "CNC MACHINING Drilling",
+          "section_description": "Drilling with precision and efficiency using advanced CNC machining.",
           "section_img": "/img/turning.svg",
-          "section_img_alt": "CNC 车削"
+          "section_img_alt": "CNC MACHINING Drilling"
         }
       ]
     },
