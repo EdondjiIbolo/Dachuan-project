@@ -3,14 +3,12 @@
 	<table>
 		<thead>
 			<tr>
-				<th>Column 1</th>
-				<th>Column 2</th>
-				<th>Column 3</th>
-				<th>Column 4</th>
-				<th>Column 5</th>
+				<th>Material</th>
+				<th colspan="4" class="bg-white">Column 2</th>
+				
 			</tr>
 		</thead>
-		<tbody>
+		<tbody class="sm:text-base text-xs ">
 			<tr>
 				<td>Aluminum</td>
 				<td>Aluminum 6061-T6</td>
@@ -40,11 +38,11 @@
 				<td>Cell 5</td>
 			</tr>
 			<tr>
-				<td>Aluminum MIC-6</td>
-				<td>Cell 2</td>
-				<td>Cell 3</td>
-				<td>Cell 4</td>
-				<td>Cell 5</td>
+				<td>Plastic</td>
+				<td>ABS</td>
+				<td>Bakelite</td>
+				<td>Garolite G10/FR4</td>
+				<td>Nylon 66</td>
 			</tr>
 		</tbody>
 	</table>
@@ -53,7 +51,7 @@
 .container{
     overflow: hidden;
     width: 100%;
-    padding: 50px;
+    padding-top: 50px;
     
 }
 table {
@@ -77,11 +75,52 @@ td {
 th {
 	text-align: left;
 }
-
- 
-	thead th {
+thead th {
 		background-color: #55608f;
+}
+
+tr:hover {
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+
+	td {
+		position: relative;
+	}
+		td:hover::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255, 255, 255, 0.2);
+				z-index: -1;
+	
 	}
 
+@media screen and (max-width:400px) {
+	.container{
+		padding: 15px;
+		padding-bottom: 0;
+	}
+	td {
+	padding: 7px;
+	font-size: .6rem;
+
+	}
+td:nth-child(n+3) {
+    display: none;
+  }
+}
+
+
+@media (max-width: 769px) { /* Dispositivos de mayor tamaño */
+  td:nth-child(n+4) {
+    display: none;
+  }
+  .container{
+		padding: 15px;
+	}
+}
 
 </style>

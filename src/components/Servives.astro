@@ -3,67 +3,67 @@ import ArrowIcon from '../components/icons/ArrowIcon.astro';
 const {id} = Astro.props
 ---
 
-<section id={id} class="grid md:grid-cols-3 md:grid-flow-col ">
-	<article class="flex  bg-gradient-to-l p-4  text-white from-cyan-500 to-blue-500 items-center gap-6 py-4 ">
-		<picture class="flex items-center w-40 h-40">
+<section id={id} class="grid md:grid-cols-3 md:grid-flow-col  ">
+	<article class="grid place-content-center  bg-gradient-to-l p-4  text-white to-green-500 from-green-700  gap-6 py-4 ">
+		<picture class="flex items-center w-40 m-auto h-28">
 			<img src="/img/miling1.svg" alt="Service Picture cnc">
 		</picture>
 		
 		<div class="flex  flex-col gap-4 p-4 ">
-			<h3 class="font-bold text-lg border-b py-4">CNC 钻孔</h3>
+			<h3 class="font-bold text-lg border-b py-4">CNC Milling</h3>
 		
 		<ul class="flex flex-col gap-2 ">
-			<li class="list-disc text-md ">可对应铣削、线切割、磨削等多种加工方式</li>
-			<li class="list-disc">可对应不锈钢、钢、铝合金、树脂、铜等多种材质</li>
-			<li class="list-disc">可自由定义尺寸公差</li>
+			<li class="list-disc text-md ">We offer high precision CNC milling services to create custom parts according to your exact specifications.</li>
+			<li class="list-disc">Our CNC turning service uses cutting-edge technology to efficiently produce high-quality cylindrical components.</li>
+			<li class="list-disc">We provide advanced CNC machining solutions that guarantee the accuracy and quality of your industrial projects.</li>
 		</ul>
 		<a href="#" class="flex items-center p-3 shadow-md rounded text-white bg-orange-500 w-full  hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2  hover:border-orange-400 hover:outline hover:text-orange-400">
 			<div class="rotate-90">
 				<ArrowIcon />
 			</div>
-			<p class="text-center w-full">了解更多</p>
+			<p class="text-center w-full">See More</p>
 		</a>
 		</div>
 	</article>
-		<article class="flex  bg-gradient-to-l p-4  text-white to-slate-500 from-slate-700 items-center gap-6 py-4 ">
-		<picture class="flex items-center w-40 h-40">
+		<article class="grid place-content-center  bg-gradient-to-l p-4  text-white to-orange-500 from-orange-700  gap-6 py-4 ">
+		<picture class="flex items-center w-40 m-auto h-28">
 			<img src="/img/drilling1.svg" alt="Service Picture cnc">
 		</picture>
 		
 		<div class="flex  flex-col gap-4 p-4 ">
-			<h3 class="font-bold text-lg border-b py-4">CNC 铣削</h3>
+			<h3 class="font-bold text-lg border-b py-4">CNC Turning</h3>
 		
 		<ul class="flex flex-col gap-2 ">
-			<li class="list-disc text-md ">可对应铣削、线切割、磨削等多种加工方式</li>
-			<li class="list-disc">可对应不锈钢、钢、铝合金、树脂、铜等多种材质</li>
-			<li class="list-disc">可自由定义尺寸公差</li>
+			<li class="list-disc text-md ">Our CNC turning service utilizes state-of-the-art equipment to deliver precise and intricately shaped cylindrical components.</li>
+			<li class="list-disc">With our CNC turning capabilities, we can efficiently produce a wide range of turned parts, including shafts, pins, and connectors, to meet your specific requirements.</li>
+			<li class="list-disc">Our skilled machinists and advanced turning machines ensure the highest level of accuracy and repeatability in the production of your turned components.</li>
 		</ul>
 		<a href="#" class="flex p-3 items-center shadow-md rounded text-white bg-orange-500 w-full  hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2   hover:outline   hover:outline-orange-400 hover:text-orange-400">
 			<div class="rotate-90 ">
 				<ArrowIcon />
 			</div>
-			<p class="text-center w-full">了解更多</p>
+			<p class="text-center w-full">See More</p>
 		</a>
 		</div>
 	</article>
-		<article class="flex  bg-gradient-to-l p-4  text-white to-orange-500 from-orange-700 items-center gap-6 py-4 ">
-		<picture class="flex items-center w-40 h-40">
+		<article class="grid place-content-center  bg-gradient-to-l p-4  text-white to-yellow-500 from-yellow-700  gap-6 py-4 ">
+		<picture class="flex items-center w-40 m-auto h-28">
 			<img src="/img/turning.svg" alt="Service Picture cnc">
 		</picture>
 		
 		<div class="flex  flex-col gap-4 p-4 ">
-			<h3 class="font-bold text-lg border-b py-4">CNC 车削</h3>
+			<h3 class="font-bold text-lg border-b py-4">CNC Drilling</h3>
 		
 		<ul class="flex flex-col gap-2 ">
-			<li class="list-disc text-md ">可对应铣削、线切割、磨削等多种加工方式</li>
-			<li class="list-disc">可对应不锈钢、钢、铝合金、树脂、铜等多种材质</li>
-			<li class="list-disc">可自由定义尺寸公差</li>
+			<li class="list-disc text-md ">Our drilling services offer precise and efficient hole drilling solutions for a variety of materials, including metal, plastic, and wood.</li>
+			<li class="list-disc">We have a range of drilling machines, including CNC drills, that can handle different hole sizes and depths to meet your specific needs.</li>
+			<li class="list-disc">Our experienced operators are skilled in drilling holes with tight tolerances, ensuring the highest level of accuracy and consistency in your drilled components.</li>
 		</ul>
-		<a href="#" class="flex p-3 items-center shadow-md rounded text-white bg-orange-500 w-full  hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2  hover:outline hover:border-orange-400 hover:text-orange-400">
+		<a href="#" class="flex p-3 flex-grow pb-4 items-center shadow-md rounded text-white bg-orange-500 w-full  hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2  hover:outline hover:border-orange-400 hover:text-orange-400">
 			<div class="rotate-90 ">
 				<ArrowIcon />
 			</div>
-			<p class="text-center w-full">了解更多</p>
+			<p class="text-center w-full">See More</p>
 		</a>
 		</div>
 	</article>

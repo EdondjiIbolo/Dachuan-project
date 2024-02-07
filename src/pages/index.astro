@@ -3,6 +3,12 @@
 import ArrowIcon from '../components/icons/ArrowIcon.astro';
 import Acordeon from '../components/Acordeon.astro';
 import Arrow2 from '../components/icons/arrow2.astro';
+import Upload from '../components/icons/Upload.astro';
+import Order from '../components/icons/Order.astro';
+import Shipping from '../components/icons/Shipping.astro';
+import Quality from '../components/icons/Quality.astro';
+import Time from '../components/icons/Time.astro';
+import Setting from '../components/icons/Setting.astro';
 import LockIcon from '../components/icons/LockIcon.astro';
 import CheckIcon from '../components/icons/CheckIcon.astro';
 import Services from '../components/Servives.astro'
@@ -45,37 +51,37 @@ import Assistance from '../components/Assistance.astro';
 		<a href="#" class="bg-blue-800 font-semibold text-white p-2 text-nowrap rounded md:w-18 w-44 text-center hover:bg-white transition-all duration-200 ease-in hover:outline-2  hover:outline hover:outline-bg-blue-800 hover:text-blue-800">立即获取报价</a>
 	</section>
 </section>
-<ul class="flex px-4 w-full justify-between sticky z-10 top-20 sm:px-12 py-2 text-zinc-600 bg-zinc-50">
+<ul class="flex px-2 sm:px-4 w-full justify-between sticky z-10 top-20 md:px-12 text-xs sm:text-base py-2 text-zinc-600 bg-zinc-50">
 		<li>
-			<a href="#Services" class="p-1 hover:font-medium transition-all duration-250 ease-linear w2">Services</a>
+			<a href="#Services" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Services</a>
 		</li>
 		<li>
-			<a href="#Advantages" class="p-1 hover:font-medium transition-all duration-250 ease-linear w2">Advantages</a>
+			<a href="#Advantages" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Advantages</a>
 		</li>
 		<li>
-			<a href="#Materials" class="p-1 hover:font-medium transition-all duration-250 ease-linear w2">Materials</a>
+			<a href="#Materials" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Materials</a>
 		</li>
 		<li>
-			<a href="#Assistance" class="p-1 hover:font-medium transition-all duration-250 ease-linear w2">Design Assistance</a>
+			<a href="#Assistance" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Design Assistance</a>
 		</li>
 		<li>
-			<a href="#Quotation" class="p-1 hover:font-medium transition-all duration-250 ease-linear w2">Get Quotation</a>
+			<a href="#Quotation" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Get Quotation</a>
 		</li>
 	
 </ul>
 <section >
 	<Services />
-	<section id="Advantages"  class="flex flex-wrap">
+	<section id="Advantages"  class="flex pt-20 flex-wrap">
 		<article class='w-full m-auto flex justify-center items-center gap-8  p-4 bg-slate-100 flex-col'>
-			<h3 class="font-bold text-xl mb-2">如何订购？</h3>
-			<p class='text-blue-800'>只需 <strong class="font-bold text-lg">3</strong> 步轻松实现</p>
+			<h3 class="font-bold text-xl mb-2">"How to place an order?"</h3>
+			<p class='text-blue-800'>You can place your order in just <strong class="font-bold text-lg">3</strong> steps</p>
 			<div class="items-container">
 				<article class="item">
-					<span class="absolute -top-2 -left-2 bg-green-900 text-white rounded-full h-[25px] w-[25px] flex justify-center items-center font-semibold text-xs">1</span>
-					<picture>
-						<img src="/img/upload.svg" class="w-6 h-6" alt="upload-file">
+					<span class="absolute -top-2 -left-2 bg-green-900 text-white  text-xl p-3 h-12px w-12 rounded-full flex justify-center items-center font-semibold ">1</span>
+					<picture class="flex justify-center">
+						<Upload />
 					</picture>
-					<p class="font-semibold text-nowrap">上传3D图</p>
+					<p class="font-semibold  max-w-[12ch] text-center">Upload Your 3D File</p>
 				</article>
 				<div class="  flex  p-1">
 					<span class="w-4 h-4">
@@ -88,12 +94,12 @@ import Assistance from '../components/Assistance.astro';
 						<Arrow2 />
 					</span>
 				</div>
-				<article class="item"  >
-					<span class="absolute -top-2 -left-2 bg-green-900 text-white rounded-full h-[25px] w-[25px] flex justify-center items-center font-semibold text-xs">2</span>
-					<picture>
-						<img src="/img/ordenar.svg" class="w-6 h-6" alt="upload-file">
+				<article class="item">
+					<span class="absolute -top-2 -left-2 bg-green-900 text-white  text-xl p-3 h-12px w-12 rounded-full flex justify-center items-center font-semibold ">2</span>
+					<picture class="flex justify-center">
+						<Setting />
 					</picture>
-					<p class="font-semibold text-nowrap">上传3D图</p>
+					<p class="font-semibold  max-w-[12ch] text-center">Set Your Parametres</p>
 				</article>
 				<div class="flex  p-1">
 					<span class="w-4 h-4">
@@ -107,11 +113,11 @@ import Assistance from '../components/Assistance.astro';
 					</span>
 				</div>
 				<article class="item">
-					<span class="absolute -top-2 -left-2 bg-green-900 text-white rounded-full h-[25px] w-[25px] flex justify-center items-center font-semibold text-xs">3</span>
-					<picture>
-						<img src="/img/upload.svg" class="w-6 h-6" alt="upload-file">
+					<span class="absolute -top-2 -left-2 bg-green-900 text-white  text-xl p-3 h-12px w-12 rounded-full flex justify-center items-center font-semibold ">3</span>
+					<picture class="flex justify-center">
+						<Order />
 					</picture>
-					<p class="font-semibold text-nowrap">上传3D图</p>
+					<p class="font-semibold  max-w-[12ch] text-center">Receive your parts</p>
 				</article>
 			</div>
 			<a href="#" class="flex p-2 shadow-md rounded text-white hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2   hover:outline-orange-400 hover:outline hover:text-orange-400  bg-orange-500 w-40 ">
@@ -122,62 +128,62 @@ import Assistance from '../components/Assistance.astro';
 			</a>
 		</article >
 		<article class='items-container2'>
-			<h3 class="font-bold text-xl mb-2">您在非标件设计采购中</h3>
+			<h3 class="font-bold text-xl mb-2">"In your custom parts design procurement"</h3>
 			<div class="grid grid-cols-4 gap-2  py-8">
 				<div class="item2">
-					<header class="bg-green-400 px-2 w-full py-2 text-white sm:text-base">
-						<p>出图耗时耗力</p>
+					<header class="bg-green-400 p-2 w-full text-center font-semibold text-white sm:text-sm">
+						<p>Upload you 3D File</p>
 					</header>
 					<div class=" flex flex-col sm:gap-4  justify-center items-center py-2">
 						<picture class="h-16 w-full flex justify-center items-center">
-							<img src="/img/upload2.svg" class="w-6 h-6" alt="upload-file">
+							<Upload/>
 						</picture>
 						<div class="flex-col flex gap-0 font-xs font-semibold">
-							<p>无需工程图</p>
-							<p>上传3D图</p>
+							<p>Load 3D maps without </p>
+							<p>the need for drawings.</p>
 						</div>
 					</div>
 				</div>
 				
 				<div class="item2">
 					<header class="bg-green-400 px-2 w-full py-2 text-white sm:text-base">
-						<p>出图耗时耗力</p>
+						<p>Quality Assurance</p>
 					</header>
 					<div class="  flex flex-col sm:gap-4  justify-center items-center py-2">
 						<picture  class="h-16 w-full flex justify-center items-center">
-							<img src="/img/seguro.svg" class="w-6 h-6" alt="stings-file">
+							<Quality />
 						</picture>
 						<div class="flex-col flex gap-0 font-xs font-semibold">
-							<p>无需工程图</p>
-							<p>上传3D图</p>
+							<p>Strictly controlled quality </p>
+							<p>and reference QA of MISSMI.</p>
 						</div>
 					</div>
 				</div>
 				<div class="item2">
 					<header class="bg-green-400 px-2 w-full py-2 text-white sm:text-base">
-						<p>出图耗时耗力</p>
+						<p>Short quotation time</p>
 					</header>
 					<div class="  flex flex-col sm:gap-4  justify-center items-center py-2">
 						<picture  class="h-16 w-full flex justify-center items-center">
-							<img src="/img/settings.svg" class="w-6 h-6" alt="order-file">
+							<Time />
 						</picture>
 						<div class="flex-col flex gap-0 font-xs font-semibold">
-							<p>无需工程图</p>
-							<p>上传3D图</p>
+							<p>Automatic quotes </p>
+							<p>in one minute.</p>
 						</div>
 					</div>
 				</div>
 				<div class="item2">
 					<header class="bg-green-400 px-2 w-full py-2 text-white sm:text-base">
-						<p>出图耗时耗力</p>
+						<p>Delivery guarantee</p>
 					</header>
 					<div class="  flex flex-col sm:gap-4  justify-center items-center py-2">
 						<picture class="h-16 w-16 flex justify-center items-center">
-							<img src="/img/envio.svg" class="w-6 h-6" alt="order-file">
+							<Shipping/>
 						</picture>
 						<div class="flex-col flex gap-0 font-xs font-semibold">
-							<p>无需工程图</p>
-							<p>上传3D图</p>
+							<p>Express shipping in 1 day, </p>
+							<p>faster.</p>
 						</div>
 					</div>
 				</div>
@@ -191,7 +197,7 @@ import Assistance from '../components/Assistance.astro';
 			</div>
 		</article >		
 	</section>
-	<section id="Materials" class="relative w-full">
+	<section id="Materials" class="relative flex justify-center pt-20 w-full">
 		<Material />
 	</section>
 	<Assistance />
@@ -225,7 +231,7 @@ import Assistance from '../components/Assistance.astro';
 
 			</div>
 </section>
-<section id="Quotation" class="flex flex-col justufy-center bg-slate-50 p-8 items-center gap-8">
+<section id="Quotation" class="flex flex-col justufy-center bg-slate-50 pt-20 pb-5 px-4 items-center gap-8">
 		<h4 class="font-bold text-2xl">Video tutorial to quickly understand Chuantai</h4>
 		<article class=" flex flex-col gap-8 items-center">
 			<section class="flex gap-20 flex-wrap">
@@ -265,11 +271,13 @@ import Assistance from '../components/Assistance.astro';
 	justify-content: space-between;
 	align-items: center;
 	background: #00000036;
+	padding-top: 25px;
 }
 .item{
-	width: min(200px ,30%);
+	width: min(150px ,30%);
 	background-color: #fff;
 	display:flex;
+	gap: 15px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -278,10 +286,11 @@ import Assistance from '../components/Assistance.astro';
 	box-shadow: 0px 0px 4px 2px #00000050;
 	border-radius: 4px;
 	position: relative;
+	line-height: 1.2;
 }
 @media screen and (min-width:530px){
 	.item2{
-		width: 120px;
+		width: 150px;
 		font-size: .7rem;
 	}
 }
@@ -289,12 +298,10 @@ import Assistance from '../components/Assistance.astro';
 .item2{
 	background-color: #fff;
 	font-size: .5rem;
-	width: 80pxpx;
-	height: auto;
+	width: 150px;
 	display: flex;
-	justify-content: center;
+	align-items: center;
 	flex-direction: column;
-	text-align: center;
 }
 </style>
 
