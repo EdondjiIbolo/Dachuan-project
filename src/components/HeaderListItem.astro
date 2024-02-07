@@ -9,10 +9,14 @@ const { section_list } = section
 	<li class="menu__item">
 		<div class="flex justify-center items-center">
 			<a href="#" class="menu__link ">{section?.section_title} </a>
+			{section_list && 
 			<div class="flecha transition-all duration-150 ease-in">
 				<ArrowIcon />
 			</div>
+			}
 		</div>
+		{
+		section_list &&
 		<ul class="hidden py-2 sm:px-8 sub-menu w-screen max-w-[1310px]   md:justify-between md:items-center md:shadow-md bg-white md:absolute -left-40 top-[40px]  md:h-min">
 				{
 					section_list?.map(item=>{
@@ -24,6 +28,7 @@ const { section_list } = section
 					})
 				}
 		</ul>
+		}
 	</li>
 
 	<style>

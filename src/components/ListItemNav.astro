@@ -7,9 +7,9 @@ const {item} = Astro.props
 				</picture>
 	<section class="flex flex-col gap-3">
 	    <div >
-		<p class="font-bold text-blue-800">{item?.section_subtitle}</p>
-		<p class="text-sm">{item?.section_intro}</p>
+		<p class="font-bold text-sm text-blue-800">{item?.section_subtitle}</p>
+		<p class="text-xs">{item?.section_intro}</p>
 	    </div>
-		<p class="text-sm font-semibold max-w-[22ch]">{item?.section_description}</p>
+		<p class="text-xs font-semibold max-w-[28ch] text-pretty">{item?.section_description}</p>
 	</section>
 </a>

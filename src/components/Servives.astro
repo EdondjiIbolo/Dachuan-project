@@ -1,8 +1,9 @@
 ---
 import ArrowIcon from '../components/icons/ArrowIcon.astro';
+const {id} = Astro.props
 ---
 
-<section class="grid md:grid-cols-3 md:grid-flow-col ">
+<section id={id} class="grid md:grid-cols-3 md:grid-flow-col ">
 	<article class="flex  bg-gradient-to-l p-4  text-white from-cyan-500 to-blue-500 items-center gap-6 py-4 ">
 		<picture class="flex items-center w-40 h-40">
 			<img src="/img/miling1.svg" alt="Service Picture cnc">
@@ -16,8 +17,8 @@ import ArrowIcon from '../components/icons/ArrowIcon.astro';
 			<li class="list-disc">可对应不锈钢、钢、铝合金、树脂、铜等多种材质</li>
 			<li class="list-disc">可自由定义尺寸公差</li>
 		</ul>
-		<a href="#" class="flex p-3 shadow-md rounded text-white bg-orange-500 w-full">
-			<div class="rotate-90 text-white">
+		<a href="#" class="flex items-center p-3 shadow-md rounded text-white bg-orange-500 w-full  hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2  hover:border-orange-400 hover:outline hover:text-orange-400">
+			<div class="rotate-90">
 				<ArrowIcon />
 			</div>
 			<p class="text-center w-full">了解更多</p>
@@ -37,8 +38,8 @@ import ArrowIcon from '../components/icons/ArrowIcon.astro';
 			<li class="list-disc">可对应不锈钢、钢、铝合金、树脂、铜等多种材质</li>
 			<li class="list-disc">可自由定义尺寸公差</li>
 		</ul>
-		<a href="#" class="flex p-3 shadow-md rounded text-white bg-orange-500 w-full">
-			<div class="rotate-90 text-white">
+		<a href="#" class="flex p-3 items-center shadow-md rounded text-white bg-orange-500 w-full  hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2   hover:outline   hover:outline-orange-400 hover:text-orange-400">
+			<div class="rotate-90 ">
 				<ArrowIcon />
 			</div>
 			<p class="text-center w-full">了解更多</p>
@@ -58,8 +59,8 @@ import ArrowIcon from '../components/icons/ArrowIcon.astro';
 			<li class="list-disc">可对应不锈钢、钢、铝合金、树脂、铜等多种材质</li>
 			<li class="list-disc">可自由定义尺寸公差</li>
 		</ul>
-		<a href="#" class="flex p-3 shadow-md rounded text-white bg-orange-500 w-full">
-			<div class="rotate-90 text-white">
+		<a href="#" class="flex p-3 items-center shadow-md rounded text-white bg-orange-500 w-full  hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2  hover:outline hover:border-orange-400 hover:text-orange-400">
+			<div class="rotate-90 ">
 				<ArrowIcon />
 			</div>
 			<p class="text-center w-full">了解更多</p>
