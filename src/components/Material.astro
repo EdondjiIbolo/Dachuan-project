@@ -1,5 +1,10 @@
-<div class="container">
+---
+import ArrowIcon from "./icons/ArrowIcon.astro"
+---
+
+<div class="container flex flex-col gap-2">
     <h2 class="text-center font-semibold text-2xl mb-8 underline">Materials</h2>
+	<p class="max-w-[70ch] text-center m-auto pb-2">All these materials are available in the Chuantai Instant Quoting Engine. If you require a different, material please specify it as custom when you make a request.</p>
 	<table>
 		<thead>
 			<tr>
@@ -46,6 +51,12 @@
 			</tr>
 		</tbody>
 	</table>
+	<div class="flex p-2 items-center m-auto my-8 shadow-md rounded text-white hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2   hover:outline-orange-400 hover:outline hover:text-orange-400  bg-orange-500 w-40 ">
+				<div class="rotate-90">
+					<ArrowIcon />
+				</div>
+				<a href="/Materials"class="w-full text-center text-sm font-bold">See More</a>
+			</div>
 </div>
 <style>
 .container{

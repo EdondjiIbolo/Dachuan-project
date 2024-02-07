@@ -1,7 +1,7 @@
 ---
 const {item} = Astro.props
 ---
-<a href="#" class="hover:scale-[1.05] transition-all duration-75 flex items-center gap-6">
+<a href={item?.Page} class="hover:scale-[1.05] transition-all duration-75 flex items-center gap-6">
 					<picture class="w-12 h-12 ">
 						<img src=`${item?.section_img}` alt=`${item?.section_img_alt}` class=" w-12 h-12">
 				</picture>

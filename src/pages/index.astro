@@ -20,32 +20,32 @@ import Assistance from '../components/Assistance.astro';
 
 
 <Layout title="Chuantai Automation Manufacture">
-<main class= ' w-full max-w-[1300px] m-auto  relative ' >
-<section class='relative  h-86 sm:h-80 '>
-	<picture class='absolute -z-10 top-0 left-0  w-full '>
-		<img src="/img/banner-en-3.webp" class="h-96 object-[-235px] sm:object-center sm:h-80 block object-cover w-full" alt="Banner img" class="object-cover" >
+<main class= ' w-full max-w-[1300px] m-auto  relative  ' >
+<section class='relative  h-86 sm:h-96 '>
+	<picture class='absolute z-5 top-0 left-0  w-full '>
+		<img src="/img/banner-en-3.webp" class="h-96 object-[-235px] sm:object-center sm:h-96 block object-cover w-full" alt="Banner img" class="objct-cover" >
 	</picture>
-	<section id="Services" class='px-12 py-12 flex flex-col text-nowrap gap-4 w-full h-full'>
-		<span class='text-zinc-500 text-sm'>提供一站式服务</span>
-		<h1 class='font-bold text-2xl'>零件快速打样和批量生产</h1>
+	<section id="Services" class='px-12 py-12 flex flex-col z-10 relative text-nowrap gap-4 w-full h-full'>
+		<span class='text-zinc-500 text-sm font-semibold'>One-stop service</span>
+		<h1 class='font-bold text-2xl max-w-[40ch] text-wrap'>Rapid prototype and mass production of components.</h1>
 		<ul>
-			<li class='text-zinc-500 text-base sm:text-lg flex gap-2 items-center'>
+			<li class='text-zinc-500 text-base sm:text-sm flex gap-2 items-center '>
 				<CheckIcon />
-				<strong class='text-blue-700'>50000+ </strong> 客户的信赖之选
+				<strong class='text-blue-700'>50000+ </strong> Customer's trusted choice.
 			</li>
-			<li class='text-zinc-500 text-base sm:text-lg flex gap-2 items-center'>
+			<li class='text-zinc-500 text-base sm:text-sm flex gap-2 items-center'>
 				<CheckIcon/>
-				<strong class='text-blue-700'>100% </strong>  全检出货，质量无
+				<strong class='text-blue-700'>100% </strong>  Fully inspected shipment, quality not compromised.
 			</li>
 
-			<li class='text-zinc-500 text-base sm:text-lg flex gap-2 items-center'>
+			<li class='text-zinc-500 text-base sm:text-sm flex gap-2 items-center'>
 				<CheckIcon/>
-				<strong class='text-blue-700'>97% </strong>  的准时交付率，最快一天交付
+				<strong class='text-blue-700'>97% </strong>  On-time delivery rate of 100%, with the fastest delivery in one day.
 			</li>
 		</ul>
-		<p class="text-zinc-500 text-sm flex flex-row items-center gap-1" >
+		<p class="text-zinc-500 text-sm flex flex-row items-center gap-1 mb-2" >
 			<LockIcon/>
-			有上传的图纸均被严格保密，查看保密协议
+			All uploaded drawings are strictly confidential. 
 
 		</p>
 		<a href="#" class="bg-blue-800 font-semibold text-white p-2 text-nowrap rounded md:w-18 w-44 text-center hover:bg-white transition-all duration-200 ease-in hover:outline-2  hover:outline hover:outline-bg-blue-800 hover:text-blue-800">立即获取报价</a>
@@ -127,7 +127,7 @@ import Assistance from '../components/Assistance.astro';
 				<p class="w-full text-sm text-center font-bold">Get a Quotation</p>
 			</a>
 		</article >
-		<article class='items-container2'>
+		<article class='items-container2 bg-slate-100'>
 			<h3 class="font-bold text-xl mb-2">"In your custom parts design procurement"</h3>
 			<div class="grid grid-cols-4 sm:gap-8 gap-2  py-8">
 				<div class="item2 ">
@@ -230,7 +230,7 @@ import Assistance from '../components/Assistance.astro';
 
 			</div>
 </section>
-<section id="Quotation" class="flex flex-col justufy-center bg-slate-50 pt-20 pb-5 px-4 items-center gap-8">
+<section id="Quotation" class="flex flex-col justufy-center bg-slate-70 pt-20 pb-5 px-4 items-center gap-8">
 		<h4 class="font-bold text-2xl">Video tutorial to quickly understand Chuantai</h4>
 		<article class=" flex flex-col gap-8 items-center">
 			<section class="flex gap-20 flex-wrap">
@@ -269,7 +269,6 @@ import Assistance from '../components/Assistance.astro';
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background: #00000036;
 	padding-top: 25px;
 }
 .item{
@@ -291,7 +290,11 @@ import Assistance from '../components/Assistance.astro';
 	.item2{
 		width: 150px;
 		font-size: .9rem;
-
+		cursor: pointer;
+		transition :all 350ms ease;
+	}
+	.item2:hover{
+		scale: 1.08;
 	}
 }
 
