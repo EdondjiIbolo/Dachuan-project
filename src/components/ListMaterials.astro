@@ -1,0 +1,90 @@
+---
+import ArrowIcon from "./icons/ArrowIcon.astro";
+const {section} = Astro.props
+---
+<>
+
+         <header class=" list__header flex border-b-[1px]  border-gray-300 items-center justify-between">
+            <p class="font-bold text-lg p-2">{section.name}</p>
+                <div class="icono flecha rotate-180 transition-all duration-150 ease-in">
+                    <ArrowIcon />
+                    </div>
+                    </header>
+                    <ul class="qs-ans  ans-show flex flex-col  gap-2">
+                        {
+                        section.Features.map(feature=>{
+                        return(
+
+                        <li class="font-semibold ml-3 text-base">{feature}</li>
+                        )
+                        })
+                        }
+                    </ul>
+
+</>
+ <script>
+    const qsIcon = document.querySelectorAll('.list__header');
+    qsIcon.forEach(icon=>{
+    icon.addEventListener('click', (e)=>{
+        console.log('hola')
+        icon.nextElementSibling.classList.toggle('ans-show')
+        icon.children[1].classList.toggle('icon-rotate')
+     
+   })
+})
+</script>
+
+<style>
+    .section-sc{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.section-qs{
+ 
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 30px;
+ 
+}
+.section-qs ul{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden
+}
+.list__item{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+ 
+}
+.qs-ans{
+    height: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: hsl(233, 26%, 7%);
+    overflow: hidden;
+    transition: height ease-in 300ms;
+   
+}
+.ans-show{
+    height: auto;
+
+    padding: 10px;
+    margin-bottom: 5px;
+ 
+}
+.icon-rotate{
+    transform: rotate(0deg)
+}
+.item__title{
+    margin: 0;
+    padding-block: 10px;
+}
+</style>

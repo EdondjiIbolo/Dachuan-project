@@ -20,35 +20,36 @@ import Assistance from '../components/Assistance.astro';
 
 
 <Layout title="Chuantai Automation Manufacture">
-<main class= ' w-full max-w-[1300px] m-auto  relative  ' >
-<section class='relative  h-86 sm:h-96 '>
-	<picture class='absolute z-5 top-0 left-0  w-full '>
+<main class= ' w-full max-w-[1300px] m-auto  relative  pt-20' >
+<section class='relative h-86 sm:h-96 overflow-hidden'>
+	<picture class='absolute z-5 top-0 left-0  w-full  '>
 		<img src="/img/banner-en-3.webp" class="h-96 object-[-235px] sm:object-center sm:h-96 block object-cover w-full" alt="Banner img" class="objct-cover" >
 	</picture>
-	<section id="Services" class='px-12 py-12 flex flex-col z-10 relative text-nowrap gap-4 w-full h-full'>
+	 
+	<section  class='sm:px-12 p-4 sm:py-8 flex flex-col z-10  text-wrap  relative  gap-4 w-full h-full sm:w-[580px] sm:ml-24 sm:h-[320px]'>
 		<span class='text-zinc-500 text-sm font-semibold'>One-stop service</span>
 		<h1 class='font-bold text-2xl max-w-[40ch] text-wrap'>Rapid prototype and mass production of components.</h1>
 		<ul>
-			<li class='text-zinc-500 text-base sm:text-sm flex gap-2 items-center '>
+			<li class='text-zinc-500 text-xs sm:text-sm flex gap-2   items-center '>
 				<CheckIcon />
-				<strong class='text-blue-700'>50000+ </strong> Customer's trusted choice.
+				<strong class='text-blue-700 text-xs md:text-sm'>50000+ </strong> Customer's trusted choice.
 			</li>
-			<li class='text-zinc-500 text-base sm:text-sm flex gap-2 items-center'>
+			<li class='text-zinc-500 text-xs  sm:text-sm flex gap-2 items-center'>
 				<CheckIcon/>
-				<strong class='text-blue-700'>100% </strong>  Fully inspected shipment, quality not compromised.
+				<strong class='text-blue-700 text-xs md:text-sm'>100% </strong>  Fully inspected shipment, quality not compromised.
 			</li>
 
-			<li class='text-zinc-500 text-base sm:text-sm flex gap-2 items-center'>
+			<li class='text-zinc-500 text-xs sm:text-sm flex gap-2 items-center'>
 				<CheckIcon/>
-				<strong class='text-blue-700'>97% </strong>  On-time delivery rate of 100%, with the fastest delivery in one day.
+				<strong class='text-blue-700 text-sm md:text-sm'>97% </strong>  On-time delivery rate of 100%, with the fastest delivery in one day.
 			</li>
 		</ul>
-		<p class="text-zinc-500 text-sm flex flex-row items-center gap-1 mb-2" >
+		<p class="text-zinc-500 text-xs flex flex-row items-center gap-1 mb-2" >
 			<LockIcon/>
 			All uploaded drawings are strictly confidential. 
 
 		</p>
-		<a href="#" class="bg-blue-800 font-semibold text-white p-2 text-nowrap rounded md:w-18 w-44 text-center hover:bg-white transition-all duration-200 ease-in hover:outline-2  hover:outline hover:outline-bg-blue-800 hover:text-blue-800">立即获取报价</a>
+		<a href="#" class="bg-blue-800 font-semibold text-white p-2 text-nowrap rounded md:w-18 w-44 text-center hover:bg-white transition-all duration-200 ease-in hover:outline-2  hover:outline hover:outline-bg-blue-800 hover:text-blue-800">Get a Quotation</a>
 	</section>
 </section>
 <ul class="flex px-2 sm:px-4 w-full justify-between sticky z-10 top-20 md:px-12 text-xs sm:text-base py-2 text-zinc-600 bg-zinc-50">
@@ -70,7 +71,7 @@ import Assistance from '../components/Assistance.astro';
 	
 </ul>
 <section >
-	<Services />
+	<Services  />
 	<section id="Advantages"  class="flex pt-20 flex-wrap">
 		<article class='w-full m-auto flex justify-center items-center gap-8  p-4 bg-slate-100 flex-col'>
 			<h3 class="font-bold text-xl mb-2">"How to place an order?"</h3>

@@ -1,0 +1,356 @@
+---
+import ArrowIcon from "../components/icons/ArrowIcon.astro";
+import CheckIcon2 from "../components/icons/CheckIcon2.astro";
+import LockIcon from "../components/icons/LockIcon.astro";
+import SecureIcon from "../components/icons/SecureIcon.astro";
+import Setting from "../components/icons/Setting.astro";
+import Layout from "../layouts/Layout.astro";
+import {Technologies} from '../headerData.json'
+
+const { Drilling } = Technologies
+---
+<Layout title="CNC Machinig | Drilling">
+<main class= ' relative  ' >
+    <main class=" w-full max-w-[1300px] m-auto pt-20">
+        <section class='relative flex items-center h-86 sm:h-96 overflow-hidden '>
+            <picture class='absolute hidden sm:block z-5 top-0 left-0  w-full '>
+                <img src="/img/banner-en-3.jpg" class="h-96 object-[-235px] sm:object-center sm:h-96 block object-cover w-full" alt="Banner img" class="objct-cover" >
+            </picture>
+            <section id="Services" class='sm:px-12 p-4 sm:py-8 h-full flex flex-col z-10 relative w-full bg-white text-wrap gap-4  sm:w-[580px] sm:ml-24 sm:h-[320px] '>
+
+                <h1 class='font-bold sm:text-2xl text-lg max-w-[40ch] uppercase text-wrap'>CNC MACHINING - {Drilling.Page}</h1>
+                <ul class="">
+                    <li class='text-zinc-500  text-sm sm:text-sm flex gap-2 items-center '>
+                        
+                        <p class=' text-black'>Online order for CNC {Drilling.Page} parts.</p> 
+                    </li>
+                    <li class='text-zinc-500 text-sm sm:text-sm flex gap-2 items-center'>
+                    
+                        <p class='text-black'>Materials such as aluminum, steel, copper, polymers, etc. </p>    
+                    </li>
+                    <li class='text-zinc-500 text-sm sm:text-sm flex gap-2 items-center'>
+                    
+                        <p class='text-black'>Rapid manufacturing to be completed within 10 days.</p> 
+                    </li>
+                </ul>
+                <p class="text-black font-semibold text-sm flex flex-row items-center gap-1 mb-2" >
+                    Please upload your 3D files to receive real-time quotations.
+                </p>
+                <a href="#" class="bg-blue-800 font-semibold text-white  p-2 flex items-center justify-center text-nowrap rounded md:w-18 sm:w-44 text-center hover:bg-white transition-all duration-200 ease-in hover:outline-2  hover:outline hover:outline-bg-blue-800 hover:text-blue-800">Get a Quotation</a>
+                <p class="text-zinc-500 text-xs flex flex-row items-center gap-1 mb-2" >
+                    <SecureIcon/>
+                    The documents you upload are strictly confidential and secure.
+                </p>
+            </section>
+        </section>
+        <ul class="flex px-2 sm:px-4 w-full justify-between sticky z-10 top-20 md:px-12 text-xs sm:text-base py-2 text-zinc-600 bg-zinc-50">
+                <li>
+                    <a href="#Services" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Services</a>
+                </li>
+                <li>
+                    <a href="#Advantages" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Advantages</a>
+                </li>
+                <li>
+                    <a href="#Materials" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Materials</a>
+                </li>
+                <li>
+                    <a href="#Finishing" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Finishing</a>
+                </li>
+                <li>
+                    <a href="#Quotation" class="sm:p-1 p-[6px] hover:font-medium transition-all duration-250 ease-linear w2">Get Quotation</a>
+                </li>
+            
+        </ul>
+        <section class="grid grid-cols-1 md:grid-cols-[400px,auto] gap-8 p-10">
+            <h2 class="text-2xl">
+                {Drilling.introduction}
+            </h2>
+            <article class="text-pretty text-sm flex flex-col gap-2">
+            <p>{Drilling.description_1}</p>
+            <p>{Drilling.description_2}</p> 
+            </article> 
+        </section>
+        <section id="Advantages" class="p-8 flex flex-col gap-8 from-slate-100 to-slate-200 bg-gradient-to-b"  >
+            <h2 class="text-2xl text-center">{Drilling.advantage_title}</h2>
+            <article class="grid sm:grid-flow-col auto-cols-fr gap-6 max-w-[80%] m-auto">
+                <div class="flex flex-col  gap-4">
+                    <div class="flex gap-8 p-2 border rounded flex-wrap justify-center items-center text-center md:text-left md:flex-nowrap">
+                        <Setting />
+                        <div class="flex flex-col gap-2 max-w-[55ch]">
+                            <strong>Fast delivery</strong>
+                            <p>Dachuan uses new CNC turning machines to produce high-precision parts quickly within 10 days.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 p-2 border rounded flex-wrap justify-center items-center text-center md:text-left md:flex-nowrap">
+                        <Setting />
+                        <div class="flex flex-col gap-2 max-w-[55ch]">
+                            <strong>Fast delivery</strong>
+                            <p>Dachuan uses new CNC turning machines to produce high-precision parts quickly within 10 days.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 p-2 border rounded flex-wrap justify-center items-center text-center md:text-left md:flex-nowrap">
+                        <Setting />
+                        <div class="flex flex-col gap-2 max-w-[55ch]">
+                            <strong>Fast delivery</strong>
+                            <p>Dachuan uses new CNC turning machines to produce high-precision parts quickly within 10 days.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex gap-8 p-2 border rounded flex-wrap justify-center items-center text-center md:text-left md:flex-nowrap">
+                        <Setting />
+                        <div class="flex flex-col gap-2 max-w-[55ch]">
+                            <strong>Fast delivery</strong>
+                            <p>Dachuan uses new CNC turning machines to produce high-precision parts quickly within 10 days.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 p-2 border rounded flex-wrap justify-center items-center text-center md:text-left md:flex-nowrap">
+                        <Setting />
+                        <div class="flex flex-col gap-2 max-w-[55ch]">
+                            <strong>Fast delivery</strong>
+                            <p>Dachuan uses new CNC turning machines to produce high-precision parts quickly within 10 days.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 p-2 border rounded flex-wrap justify-center items-center text-center md:text-left md:flex-nowrap">
+                        <Setting />
+                        <div class="flex flex-col gap-2 max-w-[55ch]">
+                            <strong>Fast delivery</strong>
+                            <p>Dachuan uses new CNC turning machines to produce high-precision parts quickly within 10 days.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="Materials" class=" bg-slate-100 p-8">
+                    <article class="section-art text-center items-center flex flex-col gap-4">
+                        <p class="text__title font-semibold text-xl">
+                                CNC {Drilling.Page} materials
+                        </p>
+                        <p class="max-w-[80ch] ">  
+                                All these materials are available in the Chuantai Instant Quoting Engine. If you require a different, material please specify it as custom when you make a request.
+                        </p>
+                    </article>
+                    <article class="section-qs">
+                    <ol class="qs-list">
+                        <div class="list__item">
+                           {
+                            Drilling.materials.map(material => {
+                                return (
+                                     <header class=" list__header flex border-b-[1px]  border-gray-300 items-center justify-between">
+                                        <p class="font-bold text-lg p-2">{material.name}</p>
+                                        <div class="icono flecha rotate-180 transition-all duration-150 ease-in">
+                                            <ArrowIcon />
+                                        </div>
+                                    </header>
+                                    <ul class="qs-ans   flex flex-col  gap-2">
+                                        {
+                                            material.Features.map(feature=>{
+                                                return(
+                                                    <li class="font-semibold ml-3 text-base">{feature}</li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                )
+                            })
+                           }
+                        </div>
+                    </ol>
+                </article>
+        </section>
+        <section id="Finishing" class=" bg-slate-100 p-8">
+                    <article class="section-art text-center items-center flex flex-col gap-4">
+                        <p class="text__title font-semibold text-xl">
+                                CNC Drilling Finishing Options
+                        </p>
+                        <p class="max-w-[80ch] ">  
+                                All these Finishing Options are available in the Chuantai Instant Quoting Engine. If you require a different, Finishing Options please specify it as custom when you make a request.
+                        </p>
+                    </article>
+                    <article class="section-qs">
+                    <ol class="qs-list">
+                        <div class="list__item">
+                            {
+                            Drilling.Finishing.map(Finish => {
+                                return (
+                                     <header class=" list__header flex border-b-[1px]  border-gray-300 items-center justify-between">
+                                        <p class="font-bold text-lg p-2">{Finish.name}</p>
+                                        <div class="icono flecha rotate-180 transition-all duration-150 ease-in">
+                                            <ArrowIcon />
+                                        </div>
+                                    </header>
+                                    <ul class="qs-ans   flex flex-col  gap-2">
+                                        {
+                                            Finish.Features.map(feature=>{
+                                                return(
+                                                    <li class="font-semibold ml-3 text-base">{feature}</li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                )
+                            })
+                           }
+                        </div>
+                    </ol>
+                </article>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-[400px,auto] gap-8 p-10">
+            <h2 class="text-2xl">
+                {Drilling.Sumerise.Sumerise_title}
+            </h2>
+            <article class="text-pretty text-sm flex flex-col gap-2">
+            <p>{Drilling.Sumerise.Sumerise_description_1}
+            </p>
+            </article> 
+        </section>
+    </main>
+    <section class=" m-auto ">
+        <section class="h-70 relative bg-blue-700    " >
+              <section class='  m-auto flex text-wrap max-w-[1300px] relative  gap-4  h-full '>
+                    <section id="Quotation" class=" flex sm:justify-center items-center sm:items-start py-4 sm-py-0 sm:w-[100ch] m-auto  flex-col gap-3">
+                        <h1 class='font-bold text-xl sm:max-w-[80ch] text-white'>Rapid prototype and </h1>
+                        <ol class="flex gap-5">
+                            <ul class="  max-w-[60ch]">
+                                <li class='text-white text-xs sm:text-sm flex gap-2   items-center '>
+                                    <CheckIcon2 />
+                                    <strong class='text-yellow-400  text-xs md:text-sm'>50000+ </strong> Customer's  
+                                </li>
+                                <li class='text-white text-xs  sm:text-sm flex gap-2 items-center'>
+                                    <CheckIcon2/>
+                                    <strong class='text-yellow-400 text-xs md:text-sm'>100% </strong>  Fully inspected  
+                                </li>
+
+                                <li class='text-white text-xs sm:text-sm flex gap-2 items-center'>
+                                    <CheckIcon2/>
+                                    <strong class='text-yellow-400  text-sm md:text-sm'>97% </strong>  On-time one day.
+                                </li>
+                            </ul>
+                            <ul class="  max-w-[60ch]">
+                                <li class='text-white text-xs sm:text-sm flex gap-2   items-center '>
+                                    <CheckIcon2 />
+                                    <strong class='text-yellow-400  text-xs md:text-sm'>50000+ </strong> Customer's  
+                                </li>
+                                <li class='text-white text-xs  sm:text-sm flex gap-2 items-center'>
+                                    <CheckIcon2/>
+                                    <strong class='text-yellow-400 text-xs md:text-sm'>100% </strong>  Fully inspected  
+                                </li>
+
+                                <li class='text-white text-xs sm:text-sm flex gap-2 items-center'>
+                                    <CheckIcon2/>
+                                    <strong class='text-yellow-400  text-sm md:text-sm'>97% </strong>  On-time one day.
+                                </li>
+                            </ul>
+                        </ol>
+                        
+                        <p class="text-white text-xs flex flex-row items-center gap-1 mb-2" >
+                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    class="h-4 w-4" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                                <path fill="#fff" d="M52,24h-4v-8c0-8.836-7.164-16-16-16S16,7.164,16,16v8h-4c-2.211,0-4,1.789-4,4v32c0,2.211,1.789,4,4,4h40
+                                    c2.211,0,4-1.789,4-4V28C56,25.789,54.211,24,52,24z M32,48c-2.211,0-4-1.789-4-4s1.789-4,4-4s4,1.789,4,4S34.211,48,32,48z M40,24
+                                    H24v-8c0-4.418,3.582-8,8-8s8,3.582,8,8V24z"/>
+                            </svg>
+                            All uploaded drawings are strictly confidential. 
+                        </p>
+                        <a href="#" class="p-2 text-center shadow-md rounded text-white hover:bg-emerald-50 transition-all duration-200 ease-in hover:outline-2   hover:outline-orange-400 hover:outline hover:text-orange-400  bg-orange-500  w-36 ">Get a Quotation</a>
+                    </section>
+                    <picture class="hidden sm:block m-auto h-full relative " >
+                        <img src="/img/banner-cn-2.png" class="h-full  relative z-5 object-cover object-right" style="clip-path: polygon(52% 0, 100% 0, 100% 100%, 50% 100%, 29% 50%);" alt="">
+                    </picture>
+            </section>  
+            
+        </section>
+        <section class="  p-2 sm:h-64  overflow-hidden backdrop-blur-2xl  relative">
+            <picture class="absolute blur-2xl  w-full h-full top-0 left-0 z-10">
+                <img src="/img/banner-en-3.webp" class="object-cover" alt="">
+            </picture>
+            <article class="max-w-[1300px] m-auto relative  z-20 p-3">
+                <h4 class="text-center m-auto text-4xl font-semibold mb-4">Ready to Order Your Parts Online?</h4>
+                <div class="flex flex-wrap gap-4 sm:gap-1 justify-center sm:justify-between items-center lg:px-44 lg:py-12">
+                    <div class="flex md:justify-start justify-center gap-10 text-center sm:border-r-2 w-full sm:w-[50%] border-gray-400">
+                        <span>
+                            <strong>Customers</strong>
+                            <p class="text-3xl font-light">40,000 +</p>
+                        </span>
+                        <span>
+                            <strong>Parts Quoted</strong>
+                            <p class="text-3xl font-light">1 Millon +</p>
+                        </span> 
+                    </div>
+                    <div class="flex  flex-col justify-center items-center gap-1">
+                        <a href="#"  class="bg-blue-800 font-semibold text-white p-2 text-nowrap rounded md:w-18 w-44 text-center hover:bg-blue-500  transition-all duration-200 ease-in hover:outline-2  hover:outline hover:outline-blue-800 hover:text-white">
+                            Get an Instant Qote
+                        </a>
+                        <p class="italic font-normal">All uploads are secure and confidential.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+</main>
+</Layout>
+ <script>
+    const qsIcon = document.querySelectorAll('.list__header');
+    qsIcon.forEach(icon=>{
+    icon.addEventListener('click', (e)=>{
+        console.log('hola')
+        icon.nextElementSibling.classList.toggle('ans-show')
+        icon.children[1].classList.toggle('icon-rotate')
+     
+   })
+})
+</script>
+<style>
+    .section-sc{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.section-qs{
+ 
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 30px;
+ 
+}
+.section-qs ul{
+    list-style: DISC;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden
+}
+.list__item{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+ 
+}
+.qs-ans{
+    height: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: hsl(233, 26%, 7%);
+    overflow: hidden;
+    transition: height ease-in 300ms;
+   
+}
+.ans-show{
+    height: auto;
+
+    padding: 10px;
+    margin-bottom: 5px;
+ 
+}
+.icon-rotate{
+    transform: rotate(0deg)
+}
+.item__title{
+    margin: 0;
+    padding-block: 10px;
+}
+</style>
