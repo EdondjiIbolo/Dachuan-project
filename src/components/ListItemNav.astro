@@ -1,15 +1,15 @@
 ---
 const {item} = Astro.props
 ---
-<a href={item?.Page} class="hover:scale-[1.05] transition-all duration-75 flex items-center gap-6">
+<a href={item?.Page} class="hover:scale-[1.05] transition-all duration-75 flex border-b-2 md:items-center gap-6">
 					<picture class="w-12 h-12 ">
 						<img src=`${item?.section_img}` alt=`${item?.section_img_alt}` class=" w-12 h-12">
 				</picture>
-	<section class="flex flex-col gap-3">
-	    <div >
+	<section class="flex flex-col gap-5 md:gap-4">
+	    <div>
 		<p class="font-bold text-sm text-blue-800">{item?.section_subtitle}</p>
 		<p class="text-xs">{item?.section_intro}</p>
 	    </div>
-		<p class="text-xs font-semibold max-w-[28ch] text-pretty">{item?.section_description}</p>
+		<p class="text-xs font-semibold max-w-[28ch] text-pretty  hidden md:block">{item?.section_description}</p>
 	</section>
 </a>

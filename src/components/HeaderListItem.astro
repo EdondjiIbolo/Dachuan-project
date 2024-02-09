@@ -7,7 +7,7 @@ const { section_list } = section
 
 ---
 	<li class="menu__item">
-		<div class="flex justify-center items-center">
+		<div class="flex justify-center border-b-[1.3px] border-gray-700 items-center">
 			<a href={section.Page} class="menu__link ">{section?.section_title} </a>
 			{section_list && 
 			<div class="flecha transition-all duration-150 ease-in">
@@ -17,7 +17,7 @@ const { section_list } = section
 		</div>
 		{
 		section_list &&
-		<ul class="hidden py-2 sm:px-8 sub-menu w-screen max-w-[1310px]   md:justify-between md:items-center md:shadow-md bg-white md:absolute -left-40 top-[40px]  md:h-min">
+		<ul class="hidden py-2 sm:px-8 sub-menu w-screen max-w-[1310px] flex-col md:flex-row gap-3 md:gap-0 md:justify-between md:items-center md:shadow-md bg-white md:absolute -left-40 top-[40px]  md:h-min">
 				{
 					section_list?.map(item=>{
 						return(
@@ -97,7 +97,7 @@ const { section_list } = section
 	.menu__link{
 
 		padding: 10px;
-		border-bottom: 1px solid grey;
+		
 
 	}
 	.log{

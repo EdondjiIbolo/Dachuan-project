@@ -76,7 +76,7 @@ import Assistance from '../components/Assistance.astro';
 		<article class='w-full m-auto flex justify-center items-center gap-8  p-4 bg-slate-100 flex-col'>
 			<h3 class="font-bold text-xl mb-2">"How to place an order?"</h3>
 			<p class='text-blue-800'>You can place your order in just <strong class="font-bold text-lg">3</strong> steps</p>
-			<div class="items-container">
+			<div class="items-container ">
 				<article class="item">
 					<span class="absolute -top-2 -left-2 bg-green-900 text-white  text-xl p-3 h-12px w-12 rounded-full flex justify-center items-center font-semibold ">1</span>
 					<picture class="flex justify-center">
@@ -84,7 +84,7 @@ import Assistance from '../components/Assistance.astro';
 					</picture>
 					<p class="font-semibold  max-w-[12ch] text-center">Upload Your 3D File</p>
 				</article>
-				<div class="  flex  p-1">
+				<div class=" rotate-90 flex sm:rotate-0  p-1">
 					<span class="w-4 h-4">
 						<Arrow2 />
 					</span>
@@ -102,7 +102,7 @@ import Assistance from '../components/Assistance.astro';
 					</picture>
 					<p class="font-semibold  max-w-[12ch] text-center">Set Your Parametres</p>
 				</article>
-				<div class="flex  p-1">
+				<div class="flex rotate-90 sm:rotate-0 p-1">
 					<span class="w-4 h-4">
 						<Arrow2 />
 					</span>
@@ -205,7 +205,7 @@ import Assistance from '../components/Assistance.astro';
 
 <section class="flex flex-col gap-8 p-16">
 			<h3 class="w-full text-center">Chuantai 择幂科技为您的定制零件生产提供强力支持</h3>
-			<div class=" grid grid-cols-1 md:grid-cols-3 content-center gap-6  justify-center">
+			<div class=" grid grid-cols-1 md:grid-cols-3 text-balance content-center gap-6  justify-center">
 				<article class="flex  text-center gap-4 flex-col">
 					<picture class="flex justify-center">
 						<img class="w-36 h-36 block" src="/img/masive.svg" alt="Capabilitie">
@@ -218,7 +218,7 @@ import Assistance from '../components/Assistance.astro';
 						<img class="w-36 h-36 block" src="/img/check.svg" alt="Capabilitie">
 					</picture>
 					<h4>Instant feedback</h4>
-					<p class="max-w-[60ch] m-auto text-center">No need to wait for long, just a few clicks and you can get DFM (Design for Manufacturability) feedback to learn about lead times and quotes, among other information. Xometry's real-time quoting engine (IQE) powered by data science serves you to easily choose appropriate price/lead time options for your projects. It is compatible with STEP, Mesh, Parasolid, and ACIS files.</p>
+					<p class="max-w-[60ch] m-auto text-center ">No need to wait for long, just a few clicks and you can get DFM (Design for Manufacturability) feedback to learn about lead times and quotes, among other information. Xometry's real-time quoting engine (IQE) powered by data science serves you to easily choose appropriate price/lead time options for your projects. It is compatible with STEP, Mesh, Parasolid, and ACIS files.</p>
 				</article>
 				<article class="flex   text-center gap-4 flex-col">
 					<picture class="flex justify-center">
@@ -232,13 +232,13 @@ import Assistance from '../components/Assistance.astro';
 			</div>
 </section>
 <section id="Quotation" class="flex flex-col justufy-center bg-slate-70 pt-20 pb-5 px-4 items-center gap-8">
-		<h4 class="font-bold text-2xl">Video tutorial to quickly understand Chuantai</h4>
+		<h4 class="font-bold text-2xl text-center">Video tutorial to quickly understand Chuantai</h4>
 		<article class=" flex flex-col gap-8 items-center">
 			<section class="flex gap-20 flex-wrap">
-				<video class='w-96 max-w-screen flex-1  h-48 border rounded' poster="/img/logo.png" controls="controls"   >
+				<video class='w-96 max-w-screen flex-1  h-48 border-[3px] rounded shadow-lg' poster="/img/logo.png" controls="controls"   >
 					<source src="/video/misumi-video.mp4" type="video/mp4"/>
 				</video>
-				<video class='w-96 max-w-screen flex-1 h-48 border k rounded' poster="/img/logo.png" controls="controls"   >
+				<video class='w-96 max-w-screen flex-1 h-48 border-[3px] shadow-lg  rounded ' poster="/img/logo.png" controls="controls"   >
 					<source src="/video/misumi-video.mp4" type="video/mp4"/>
 				</video>
 			</section>
@@ -287,11 +287,7 @@ import Assistance from '../components/Assistance.astro';
 	position: relative;
 	line-height: 1.2;
 }
-.item2{
-	height: 200px;
-	display: flex;
-	flex-grow: 1;
-}
+
 @media screen and (min-width:530px){
 	.item2{
 		width: 150px;
@@ -303,8 +299,33 @@ import Assistance from '../components/Assistance.astro';
 		scale: 1.08;
 	}
 }
+@media screen and (max-width:640px){
+	.items-container{
+	width: 100%;
+	flex-direction: column;
+	gap: 20px;
+
+}
+.item{
+	width: 180px;
+	background-color: #fff;
+	display:flex;
+	gap: 15px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	
+	box-shadow: 0px 0px 4px 2px #00000050;
+	border-radius: 4px;
+	position: relative;
+	line-height: 1.2;
+}
+}
 
 .item2{
+	flex-grow: 1;
+	height: 200px;
 	background-color: #fff;
 	display: flex;
 	align-items: center;

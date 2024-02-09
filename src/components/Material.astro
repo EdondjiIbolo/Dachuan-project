@@ -9,7 +9,7 @@ import ArrowIcon from "./icons/ArrowIcon.astro"
 		<thead>
 			<tr>
 				<th>Material</th>
-				<th colspan="4" class="bg-white">Column 2</th>
+				<th colspan="4" class="bg-white">Features</th>
 				
 			</tr>
 		</thead>
@@ -73,10 +73,12 @@ table {
 }
 thead { 
     border-radius: 4px;
-
+	border-bottom: 1px solid white;
+	
 }
 th,
 td {
+	border-bottom: 1px solid white;
 	padding: 15px;
 	background-color: rgba(255, 255, 255, 0.2);
 	color: #fff;
@@ -85,6 +87,14 @@ td {
 th {
 	text-align: left;
 }
+td{
+	border-right: 1px solid white;
+	transition: all ease 350ms;
+}
+th{
+	border-right: 1px solid white;
+
+}
 thead th {
 		background-color: #55608f;
 }
@@ -92,7 +102,11 @@ thead th {
 tr:hover {
 			background-color: rgba(255, 255, 255, 0.3);
 		}
+td:hover{
+	background-color: rgba(49, 29, 29, 0.363);
 
+
+}
 	td {
 		position: relative;
 	}
